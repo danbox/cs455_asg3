@@ -15,7 +15,7 @@ import java.util.StringTokenizer;
  * @date 4/15/14.
  */
 
-public class FleschReadingEaseMapper extends Mapper<LongWritable, Text, Text, FleschWritable>
+public class FleschMapper extends Mapper<LongWritable, Text, Text, FleschWritable>
 {
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException
     {
@@ -32,6 +32,7 @@ public class FleschReadingEaseMapper extends Mapper<LongWritable, Text, Text, Fl
             String curr = tok.nextToken();
             char lastChar = curr.charAt(curr.length() - 1);
 
+            //determine if token is end of a sentence
             int sentenceCount = 0;
             if(lastChar == '.' || lastChar == '!' || lastChar == '?')
             {
@@ -39,6 +40,8 @@ public class FleschReadingEaseMapper extends Mapper<LongWritable, Text, Text, Fl
             }
 
             int wordCount = 1;
+
+            //calculate number of syllables i token
             int syllableCount = countSyllables(curr);
 
             FleschWritable fleschWritable = new FleschWritable(new IntWritable(sentenceCount), new IntWritable(wordCount), new IntWritable(syllableCount));

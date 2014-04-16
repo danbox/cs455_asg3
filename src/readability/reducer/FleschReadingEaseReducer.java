@@ -24,6 +24,8 @@ public class FleschReadingEaseReducer extends Reducer<Text, FleschWritable, Text
             totalWords += curr.getWordCount().get();
             totalSyllables += curr.getSyllableCount().get();
         }
+
+        //calculate Flesch reading ease
         double output = 206.835 - 1.015 * (totalWords / totalSentences) - 84.6 * (totalSyllables / totalWords);
         context.write(key, new DoubleWritable(output));
     }

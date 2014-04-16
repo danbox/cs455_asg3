@@ -6,7 +6,13 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ea20e7-03ed-45a9-a24c-457f380a78ba" name="Default" comment="" />
+    <list default="true" id="10ea20e7-03ed-45a9-a24c-457f380a78ba" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/readability/mapper/FleschReadingEaseMapper.java" afterPath="$PROJECT_DIR$/src/readability/mapper/FleschMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java" afterPath="$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java" afterPath="$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="cs455_asg3.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -97,19 +103,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FleschReadingEase.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FleschReadingEase.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="8" selection-start="257" selection-end="257" vertical-scroll-proportion="0.23973364" vertical-offset="0" max-vertical-offset="901">
-              <folding />
+            <state line="41" column="57" selection-start="1786" selection-end="1786" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FleschReadingEaseMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschReadingEaseMapper.java">
+      <file leaf-file-name="FleschMapper.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="1710">
+            <state line="43" column="51" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.74028856" vertical-offset="107" max-vertical-offset="1764">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,7 +128,7 @@
       <file leaf-file-name="FleschReadingEaseReducer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+            <state line="27" column="39" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,6 +154,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -155,11 +166,12 @@
         <option value="$PROJECT_DIR$/src/readability/mapper/SentenceWritable.java" />
         <option value="$PROJECT_DIR$/src/readability/mapper/BookWritable.java" />
         <option value="$PROJECT_DIR$/src/readability/mapper/FleschWritable.java" />
-        <option value="$PROJECT_DIR$/src/readability/mapper/FleschReadingEaseMapper.java" />
-        <option value="$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java" />
         <option value="$PROJECT_DIR$/src/runner/WordCountRunner.java" />
         <option value="$PROJECT_DIR$/src/test/runner/WordCountRunner.java" />
         <option value="$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java" />
+        <option value="$PROJECT_DIR$/src/readability/mapper/FleschReadingEaseMapper.java" />
+        <option value="$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java" />
+        <option value="$PROJECT_DIR$/src/readability/mapper/FleschMapper.java" />
       </list>
     </option>
   </component>
@@ -169,7 +181,7 @@
     <option name="width" value="1922" />
     <option name="height" value="1056" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -474,6 +486,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="10ea20e7-03ed-45a9-a24c-457f380a78ba" name="Default" comment="" />
@@ -484,7 +513,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="25" width="1922" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -556,9 +585,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschReadingEaseMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/test/runner/WordCountRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="1710">
+        <state line="20" column="4" selection-start="533" selection-end="636" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -576,16 +605,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/runner/WordCountRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="533" selection-end="636" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+        <state line="27" column="39" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="684">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -594,8 +614,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="8" selection-start="257" selection-end="257" vertical-scroll-proportion="0.23973364" vertical-offset="0" max-vertical-offset="901">
-          <folding />
+        <state line="41" column="57" selection-start="1786" selection-end="1786" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="51" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.74028856" vertical-offset="107" max-vertical-offset="1764">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -9,7 +9,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-import readability.mapper.FleschReadingEaseMapper;
+import readability.mapper.FleschMapper;
 import readability.reducer.FleschReadingEaseReducer;
 
 import java.io.IOException;
@@ -35,7 +35,7 @@ public class FleschReadingEase
             }
         }
         FileOutputFormat.setOutputPath(job, new Path(args[1])); // output path
-        job.setMapperClass(FleschReadingEaseMapper.class); // mapper class
+        job.setMapperClass(FleschMapper.class); // mapper class
         job.setReducerClass(FleschReadingEaseReducer.class); // reducer class
         job.setOutputValueClass(Text.class);
         job.setOutputKeyClass(DoubleWritable.class); // the value
