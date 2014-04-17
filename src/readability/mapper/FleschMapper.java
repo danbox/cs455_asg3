@@ -17,6 +17,7 @@ import java.util.StringTokenizer;
 
 public class FleschMapper extends Mapper<LongWritable, Text, Text, FleschWritable>
 {
+    @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException
     {
         //get filename

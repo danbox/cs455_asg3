@@ -7,14 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10ea20e7-03ed-45a9-a24c-457f380a78ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/readability/runner/FleschGradeLevel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/readability/reducer/FleschKincaidGradeLevelReducer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/corpus_analysis.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/word_count.xml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ngram/runner/NGramCalculation.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ngram/reducer/NGramCalculationReducer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/readability/mapper/FleschMapper.java" afterPath="$PROJECT_DIR$/src/readability/mapper/FleschMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java" afterPath="$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java" afterPath="$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/readability/util/FleschWritable.java" afterPath="$PROJECT_DIR$/src/readability/util/FleschWritable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/mapper/YarnWordCountMapper.java" afterPath="$PROJECT_DIR$/src/test/mapper/YarnWordCountMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs455_asg3.iws" />
@@ -79,17 +79,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FleschWritable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/readability/util/FleschWritable.java">
+      <file leaf-file-name="BigramCalculationMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="40" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1638">
+            <state line="30" column="16" selection-start="838" selection-end="905" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
               <folding>
-                <element signature="e#1770#1771#0" expanded="true" />
-                <element signature="e#1807#1808#0" expanded="true" />
-                <element signature="e#1852#1853#0" expanded="true" />
-                <element signature="e#1885#1886#0" expanded="true" />
-                <element signature="e#1934#1935#0" expanded="true" />
-                <element signature="e#1971#1972#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NGramCalculation.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ngram/runner/NGramCalculation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.37961337" vertical-offset="0" max-vertical-offset="756">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FourGramCalculationMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="21" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1134">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnigramCalculationMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="56" selection-start="389" selection-end="617" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrigramCalculationMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="0" selection-start="23" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -98,62 +135,16 @@
       <file leaf-file-name="WordCountRunner.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/runner/WordCountRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="4" selection-start="533" selection-end="636" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="34" column="5" selection-start="533" selection-end="1412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FleschReadingEase.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java">
+      <file leaf-file-name="NGramCalculationReducer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ngram/reducer/NGramCalculationReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="672" selection-end="1946" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="954">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FleschKincaidGradeLevelReducer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschKincaidGradeLevelReducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="107" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FleschGradeLevel.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschGradeLevel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="53" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.77397263" vertical-offset="96" max-vertical-offset="972">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FleschMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1764">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FleschReadingEaseReducer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="30" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
+            <state line="22" column="49" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,7 +155,25 @@
       <file leaf-file-name="YarnWordCountReducer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/reducer/YarnWordCountReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="3" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+            <state line="21" column="49" selection-start="442" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="YarnWordCountMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/mapper/YarnWordCountMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="86" selection-start="323" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FleschMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="20" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1782">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,11 +204,19 @@
         <option value="$PROJECT_DIR$/src/test/runner/WordCountRunner.java" />
         <option value="$PROJECT_DIR$/src/readability/mapper/FleschReadingEaseMapper.java" />
         <option value="$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java" />
-        <option value="$PROJECT_DIR$/src/readability/mapper/FleschMapper.java" />
         <option value="$PROJECT_DIR$/src/readability/util/FleschWritable.java" />
         <option value="$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java" />
         <option value="$PROJECT_DIR$/src/readability/reducer/FleschKincaidGradeLevelReducer.java" />
         <option value="$PROJECT_DIR$/src/readability/runner/FleschGradeLevel.java" />
+        <option value="$PROJECT_DIR$/src/readability/mapper/FleschMapper.java" />
+        <option value="$PROJECT_DIR$/src/test/mapper/YarnWordCountMapper.java" />
+        <option value="$PROJECT_DIR$/src/ngram/reducer/NGramCalculationReducer.java" />
+        <option value="$PROJECT_DIR$/src/ngram/mapper/NGramCalculationMapper.java" />
+        <option value="$PROJECT_DIR$/src/ngram/mapper/BiGramCalculationMapper.java" />
+        <option value="$PROJECT_DIR$/src/ngram/mapper/MonoGramCalculationMapper.java" />
+        <option value="$PROJECT_DIR$/src/ngram/mapper/TriGramCalculationMapper.java" />
+        <option value="$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java" />
+        <option value="$PROJECT_DIR$/src/ngram/runner/NGramCalculation.java" />
       </list>
     </option>
   </component>
@@ -272,6 +289,10 @@
               <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -309,11 +330,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="readability" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,7 +362,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="readability" />
+              <option name="myItemId" value="ngram" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -353,7 +384,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="readability" />
+              <option name="myItemId" value="ngram" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -375,7 +406,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="readability" />
+              <option name="myItemId" value="ngram" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -567,36 +598,40 @@
       <created>1397625002861</created>
       <updated>1397625002861</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added flesch-kincaid grade level.  Needs more testing">
+      <created>1397705952122</created>
+      <updated>1397705952122</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="1919" y="25" width="1922" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16541353" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24226254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16541353" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24226254" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -612,7 +647,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="changed FleschMapper, added comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed FleschMapper, added comments" />
+    <MESSAGE value="added flesch-kincaid grade level.  Needs more testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="added flesch-kincaid grade level.  Needs more testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -622,47 +658,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/mapper/YarnWordCountMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="8" selection-start="541" selection-end="718" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/runner/WordCountRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="533" selection-end="636" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/reducer/YarnWordCountReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="3" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1764">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="30" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
+        <state line="2" column="0" selection-start="30" selection-end="191" vertical-scroll-proportion="0.039955605" vertical-offset="0" max-vertical-offset="901">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -671,7 +671,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="672" selection-end="1946" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="954">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -680,7 +680,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="27" column="107" selection-start="1000" selection-end="1000" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -701,10 +701,92 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschGradeLevel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="53" selection-start="1877" selection-end="1877" vertical-scroll-proportion="0.77397263" vertical-offset="96" max-vertical-offset="972">
+        <state line="20" column="17" selection-start="693" selection-end="693" vertical-scroll-proportion="0.3207547" vertical-offset="71" max-vertical-offset="972">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="20" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1782">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/runner/WordCountRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="5" selection-start="533" selection-end="1412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/reducer/YarnWordCountReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="49" selection-start="442" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/mapper/YarnWordCountMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="86" selection-start="323" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="56" selection-start="389" selection-end="617" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="16" selection-start="838" selection-end="905" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngram/reducer/NGramCalculationReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="49" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="23" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="21" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1134">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngram/runner/NGramCalculation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.37961337" vertical-offset="0" max-vertical-offset="756">
+          <folding />
         </state>
       </provider>
     </entry>

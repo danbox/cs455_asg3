@@ -1,4 +1,4 @@
-package test.mapper;
+package ngram.mapper;
 
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
@@ -10,12 +10,13 @@ import java.util.StringTokenizer;
 
 /**
  * @author danbox
- * @date 4/14/14.
+ * @date 4/16/14.
  */
-public class YarnWordCountMapper extends Mapper<LongWritable, Text, Text, IntWritable>
+
+public class UnigramCalculationMapper extends Mapper<LongWritable, Text, Text, IntWritable>
 {
     @Override
-    public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException
+    public void map(LongWritable key, Text value, Mapper.Context context) throws IOException, InterruptedException
     {
         String line = value.toString();
         StringTokenizer tok = new StringTokenizer(line);
