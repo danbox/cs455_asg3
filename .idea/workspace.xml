@@ -7,14 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10ea20e7-03ed-45a9-a24c-457f380a78ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ngram/runner/NGramCalculation.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ngram/reducer/NGramCalculationReducer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/readability/mapper/FleschMapper.java" afterPath="$PROJECT_DIR$/src/readability/mapper/FleschMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/mapper/YarnWordCountMapper.java" afterPath="$PROJECT_DIR$/src/test/mapper/YarnWordCountMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/TermFrequencyMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/reducer/TermFrequencyReducer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/util/TermFrequencyWritable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs455_asg3.iws" />
@@ -79,10 +75,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BigramCalculationMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java">
+      <file leaf-file-name="TermFrequencyWritable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tfidf/util/TermFrequencyWritable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="16" selection-start="838" selection-end="905" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+            <state line="14" column="13" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1386">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#1169#1170#0" expanded="true" />
+                <element signature="e#1214#1215#0" expanded="true" />
+                <element signature="e#1247#1248#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FleschWritable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/readability/util/FleschWritable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="0" selection-start="797" selection-end="1414" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1476">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,19 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NGramCalculation.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ngram/runner/NGramCalculation.java">
+      <file leaf-file-name="TermFrequencyMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tfidf/mapper/TermFrequencyMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.37961337" vertical-offset="0" max-vertical-offset="756">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FourGramCalculationMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="21" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1134">
+            <state line="30" column="69" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,10 +112,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnigramCalculationMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java">
+      <file leaf-file-name="TermFrequencyReducer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tfidf/reducer/TermFrequencyReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="56" selection-start="389" selection-end="617" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+            <state line="12" column="82" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -121,50 +123,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrigramCalculationMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java">
+      <file leaf-file-name="FleschReadingEaseReducer.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="23" selection-end="182" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="972">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WordCountRunner.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/runner/WordCountRunner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="5" selection-start="533" selection-end="1412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NGramCalculationReducer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ngram/reducer/NGramCalculationReducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="49" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YarnWordCountReducer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/reducer/YarnWordCountReducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="49" selection-start="442" selection-end="596" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="468">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="YarnWordCountMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/mapper/YarnWordCountMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="86" selection-start="323" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
+            <state line="13" column="97" selection-start="304" selection-end="363" vertical-scroll-proportion="0.16438356" vertical-offset="0" max-vertical-offset="876">
               <folding />
             </state>
           </provider>
@@ -173,10 +135,19 @@
       <file leaf-file-name="FleschMapper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="20" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1782">
+            <state line="38" column="13" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1782">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TermFrequency.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="13" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -217,6 +188,9 @@
         <option value="$PROJECT_DIR$/src/ngram/mapper/TriGramCalculationMapper.java" />
         <option value="$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java" />
         <option value="$PROJECT_DIR$/src/ngram/runner/NGramCalculation.java" />
+        <option value="$PROJECT_DIR$/src/tfidf/util/TermFrequencyWritable.java" />
+        <option value="$PROJECT_DIR$/src/tfidf/mapper/TermFrequencyMapper.java" />
+        <option value="$PROJECT_DIR$/src/tfidf/reducer/TermFrequencyReducer.java" />
       </list>
     </option>
   </component>
@@ -286,7 +260,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="tfidf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tfidf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -308,7 +304,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="tfidf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -330,87 +326,87 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs455_asg3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs455_asg3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs455_asg3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs455_asg3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngram" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="runner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs455_asg3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs455_asg3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngram" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reducer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs455_asg3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cs455_asg3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngram" />
+              <option name="myItemId" value="tfidf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="mapper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readability" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readability" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readability" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reducer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -602,7 +598,11 @@
       <created>1397705952122</created>
       <updated>1397705952122</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added N-Gram calculation.  Needs more testing">
+      <created>1397712027827</created>
+      <updated>1397712027827</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -620,13 +620,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32975295" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18796992" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24226254" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24226254" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -648,7 +648,8 @@
     </option>
     <MESSAGE value="changed FleschMapper, added comments" />
     <MESSAGE value="added flesch-kincaid grade level.  Needs more testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="added flesch-kincaid grade level.  Needs more testing" />
+    <MESSAGE value="Added N-Gram calculation.  Needs more testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added N-Gram calculation.  Needs more testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -658,15 +659,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="30" selection-end="191" vertical-scroll-proportion="0.039955605" vertical-offset="0" max-vertical-offset="901">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="0" selection-start="672" selection-end="1946" vertical-scroll-proportion="0.0" vertical-offset="78" max-vertical-offset="954">
@@ -685,34 +677,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/readability/util/FleschWritable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="40" selection-start="67" selection-end="67" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1638">
-          <folding>
-            <element signature="e#1770#1771#0" expanded="true" />
-            <element signature="e#1807#1808#0" expanded="true" />
-            <element signature="e#1852#1853#0" expanded="true" />
-            <element signature="e#1885#1886#0" expanded="true" />
-            <element signature="e#1934#1935#0" expanded="true" />
-            <element signature="e#1971#1972#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschGradeLevel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="17" selection-start="693" selection-end="693" vertical-scroll-proportion="0.3207547" vertical-offset="71" max-vertical-offset="972">
           <folding>
             <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="20" selection-start="1638" selection-end="1638" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1782">
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -760,7 +729,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="49" selection-start="614" selection-end="614" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -778,14 +747,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="50" column="21" selection-start="1552" selection-end="1552" vertical-scroll-proportion="0.0" vertical-offset="378" max-vertical-offset="1134">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ngram/runner/NGramCalculation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.37961337" vertical-offset="0" max-vertical-offset="756">
+        <state line="12" column="0" selection-start="482" selection-end="482" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="13" selection-start="80" selection-end="80" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="252">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="13" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1782">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tfidf/mapper/TermFrequencyMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="69" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tfidf/reducer/TermFrequencyReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="82" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tfidf/util/TermFrequencyWritable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1386">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1169#1170#0" expanded="true" />
+            <element signature="e#1214#1215#0" expanded="true" />
+            <element signature="e#1247#1248#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/util/FleschWritable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="797" selection-end="1414" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="1476">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="97" selection-start="304" selection-end="363" vertical-scroll-proportion="0.16438356" vertical-offset="0" max-vertical-offset="876">
           <folding />
         </state>
       </provider>
