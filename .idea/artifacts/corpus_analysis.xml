@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="corpus_analysis">
+    <output-path>$PROJECT_DIR$/out/artifacts/corpus_analysis</output-path>
+    <root id="archive" name="corpus_analysis.jar">
+      <element id="module-output" name="cs455_asg3" />
+    </root>
+  </artifact>
+</component>

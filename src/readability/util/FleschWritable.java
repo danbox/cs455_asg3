@@ -1,9 +1,7 @@
 package readability.util;
 
 import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.Writable;
-import org.omg.PortableServer._ServantActivatorStub;
 
 import java.io.DataInput;
 import java.io.DataOutput;

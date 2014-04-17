@@ -10,6 +10,7 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import readability.mapper.FleschMapper;
+import readability.reducer.FleschKincaidGradeLevelReducer;
 import readability.reducer.FleschReadingEaseReducer;
 import readability.util.FleschWritable;
 
@@ -17,16 +18,16 @@ import java.io.IOException;
 
 /**
  * @author danbox
- * @date 4/15/14.
+ * @date 4/16/14.
  */
-public class FleschReadingEase
+public class FleschGradeLevel
 {
     public static void main(String args[]) throws IOException, ClassNotFoundException, InterruptedException
     {
         Configuration conf = new Configuration();
         Job job = Job.getInstance(conf);
-        job.setJarByClass(FleschReadingEase.class); // this class’s name
-        job.setJobName("Flesch Reading Ease"); // name of this job.
+        job.setJarByClass(FleschGradeLevel.class); // this class’s name
+        job.setJobName("Flesch Grade Level"); // name of this job.
         FileSystem fs = FileSystem.get(conf); // get the FS, you will need to initialize it
         FileStatus[] status_list = fs.listStatus(new Path(args[0]));
         if (status_list != null) {
@@ -37,7 +38,7 @@ public class FleschReadingEase
         }
         FileOutputFormat.setOutputPath(job, new Path(args[1])); // output path
         job.setMapperClass(FleschMapper.class); // mapper class
-        job.setReducerClass(FleschReadingEaseReducer.class); // reducer class
+        job.setReducerClass(FleschKincaidGradeLevelReducer.class); // reducer class
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(FleschWritable.class);
         job.setOutputKeyClass(Text.class); // the key
