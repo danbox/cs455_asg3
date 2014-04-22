@@ -1,7 +1,7 @@
 package ngram.reducer;
 
+import ngram.util.NGramWritable;
 import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.IOException;
@@ -10,10 +10,9 @@ import java.io.IOException;
  * @author danbox
  * @date 4/16/14.
  */
-public class NGramCalculationReducer extends Reducer<Text, IntWritable, Text, IntWritable>
+public class NGramCalculationReducer extends Reducer<NGramWritable, IntWritable, NGramWritable, IntWritable>
 {
-    @Override
-    public void reduce(Text key, Iterable <IntWritable> values, Context context) throws IOException, InterruptedException
+    public void reduce(NGramWritable key, Iterable<IntWritable> values, Reducer.Context context) throws IOException, InterruptedException
     {
         int sum = 0;
         for(IntWritable value : values)

@@ -1,8 +1,9 @@
 package ngram.runner;
 
-import ngram.mapper.TrigramCalculationMapper;
+import ngram.mapper.UnigramCalculationMapper;
 import ngram.mapper.FourGramCalculationMapper;
 import ngram.reducer.NGramCalculationReducer;
+import ngram.util.NGramWritable;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -26,10 +27,10 @@ public class NGramCalculation
         job.setJobName("N-gram Calculation"); //name of this job.
         FileInputFormat.addInputPath(job, new Path(args[0])); //input path
         FileOutputFormat.setOutputPath(job, new Path(args[1])); //output path
-        job.setMapperClass(FourGramCalculationMapper.class); //test.mapper class
+        job.setMapperClass(UnigramCalculationMapper.class); //test.mapper class
         job.setCombinerClass(NGramCalculationReducer.class); //optional
-        job.setReducerClass(NGramCalculationReducer.class); //test.reducer class
-        job.setOutputKeyClass(Text.class); // the key your test.reducer outputs
+        job.setReducerClass(NGramCalculationReducer.class); //reducer class
+        job.setOutputKeyClass(NGramWritable.class); // the key your reducer outputs
         job.setOutputValueClass(IntWritable.class); // the value
         System.exit( job.waitForCompletion(true) ? 0 : 1);
     }
