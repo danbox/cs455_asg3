@@ -1,9 +1,8 @@
 package ngram.runner;
 
 import ngram.mapper.UnigramCalculationMapper;
-import ngram.mapper.FourGramCalculationMapper;
 import ngram.reducer.NGramCalculationReducer;
-import ngram.util.NGramWritable;
+import ngram.util.NGramWritableComparable;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -30,8 +29,11 @@ public class NGramCalculation
         job.setMapperClass(UnigramCalculationMapper.class); //test.mapper class
         job.setCombinerClass(NGramCalculationReducer.class); //optional
         job.setReducerClass(NGramCalculationReducer.class); //reducer class
-        job.setOutputKeyClass(NGramWritable.class); // the key your reducer outputs
+        job.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
         job.setOutputValueClass(IntWritable.class); // the value
+//        job.setGroupingComparatorClass(NGramGroupingComparator.class);
+//        job.setPartitionerClass(NGramPartitioner.class);
+//        job.setSortComparatorClass(NGramComparator.class);
         System.exit( job.waitForCompletion(true) ? 0 : 1);
     }
 }

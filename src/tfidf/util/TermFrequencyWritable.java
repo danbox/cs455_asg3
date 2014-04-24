@@ -1,7 +1,6 @@
 package tfidf.util;
 
 import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.Writable;
 
 import java.io.DataInput;
@@ -14,44 +13,44 @@ import java.io.IOException;
  */
 public class TermFrequencyWritable implements Writable
 {
-    private Text        _term;
+    private IntWritable _maxFrequency;
     private IntWritable _frequency;
 
     public TermFrequencyWritable()
     {
-        _term = new Text();
+        _maxFrequency = new IntWritable();
         _frequency = new IntWritable();
     }
 
-    public TermFrequencyWritable(String term, int frequency)
+    public TermFrequencyWritable(int frequency, int maxFrequency)
     {
-        _term = new Text(term);
+        _maxFrequency = new IntWritable(maxFrequency);
         _frequency = new IntWritable(frequency);
     }
 
     @Override
     public void write(DataOutput dataOutput) throws IOException
     {
-        _term.write(dataOutput);
+        _maxFrequency.write(dataOutput);
         _frequency.write(dataOutput);
     }
 
     @Override
     public void readFields(DataInput dataInput) throws IOException
     {
-        _term.readFields(dataInput);
+        _maxFrequency.readFields(dataInput);
         _frequency.readFields(dataInput);
     }
 
     @Override
     public String toString()
     {
-        return "Term: " + _term + " Frequency: " + _frequency;
+        return "MaxFrequency: " + _maxFrequency + " Frequency: " + _frequency;
     }
 
-    public Text getTerm()
+    public IntWritable getMaxFrequency()
     {
-        return _term;
+        return _maxFrequency;
     }
 
     public IntWritable getFrequency()
@@ -59,9 +58,9 @@ public class TermFrequencyWritable implements Writable
         return _frequency;
     }
 
-    public void setTerm(String term)
+    public void setMaxFrequency(int maxFrequency)
     {
-        _term.set(term);
+        _maxFrequency.set(maxFrequency);
     }
 
     public void setFrequency(int frequency)

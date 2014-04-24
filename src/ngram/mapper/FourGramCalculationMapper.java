@@ -1,9 +1,11 @@
 package ngram.mapper;
 
+import ngram.util.NGramWritableComparable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
+import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
@@ -12,11 +14,15 @@ import java.util.StringTokenizer;
  * @author danbox
  * @date 4/16/14.
  */
-public class FourGramCalculationMapper extends Mapper<LongWritable, Text, Text, IntWritable>
+public class FourGramCalculationMapper extends Mapper<NGramWritableComparable, IntWritable, NGramWritableComparable, IntWritable>
 {
     @Override
-    public void map(LongWritable key, Text value, Mapper.Context context) throws IOException, InterruptedException
+    public void map(NGramWritableComparable key, IntWritable value, Context context) throws IOException, InterruptedException
     {
+        //get filename
+        FileSplit fileSplit = (FileSplit)context.getInputSplit();
+        String filename = fileSplit.getPath().getName();
+
         String line = value.toString();
         StringTokenizer tok = new StringTokenizer(line);
 
@@ -38,7 +44,7 @@ public class FourGramCalculationMapper extends Mapper<LongWritable, Text, Text, 
         while(tok.hasMoreTokens())
         {
             fourth = tok.nextToken();
-            context.write(new Text(first + " " +  second + " " + third + " " + fourth), new IntWritable(1));
+            context.write(new NGramWritableComparable(filename, first + " " +  second + " " + third + " " + fourth), new IntWritable(1));
             if(tok.hasMoreTokens())
             {
                 first = tok.nextToken();

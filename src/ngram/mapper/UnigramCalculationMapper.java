@@ -1,13 +1,16 @@
 package ngram.mapper;
 
-import ngram.util.NGramWritable;
+import ngram.util.NGramWritableComparable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.lib.input.FileSplit;
+import tfidf.util.FileCounter;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.StringTokenizer;
 
 /**
@@ -15,10 +18,11 @@ import java.util.StringTokenizer;
  * @date 4/16/14.
  */
 
-public class UnigramCalculationMapper extends Mapper<LongWritable, Text, NGramWritable, IntWritable>
+public class UnigramCalculationMapper extends Mapper<LongWritable, Text, NGramWritableComparable, IntWritable>
 {
+    List<String> documents = new ArrayList<String>();
     @Override
-    public void map(LongWritable key, Text value, Mapper.Context context) throws IOException, InterruptedException
+    public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException
     {
         //get filename
         FileSplit fileSplit = (FileSplit)context.getInputSplit();
@@ -28,7 +32,7 @@ public class UnigramCalculationMapper extends Mapper<LongWritable, Text, NGramWr
         StringTokenizer tok = new StringTokenizer(line);
         while(tok.hasMoreTokens())
         {
-            context.write(new NGramWritable(filename, tok.nextToken()), new IntWritable(1));
+            context.write(new NGramWritableComparable(filename, tok.nextToken()), new IntWritable(1));
         }
     }
 }
