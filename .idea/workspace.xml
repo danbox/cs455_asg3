@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="10ea20e7-03ed-45a9-a24c-457f380a78ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/readability/util/DocumentComparator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/readability/util/DocumentComparator.java" afterPath="$PROJECT_DIR$/src/readability/util/DocumentComparator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/readability/runner/FleschGradeLevel.java" afterPath="$PROJECT_DIR$/src/readability/runner/FleschGradeLevel.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java" afterPath="$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -77,10 +78,7 @@
         <entry file="file://$PROJECT_DIR$/src/tfidf/reducer/TFIDFReducer.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="41" column="13" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="1116">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#717#733#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -88,7 +86,7 @@
       <file leaf-file-name="FleschWritable.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/readability/util/FleschWritable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="42" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0" vertical-offset="485" max-vertical-offset="1386">
+            <state line="67" column="42" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0" vertical-offset="1206" max-vertical-offset="1638">
               <folding />
             </state>
           </provider>
@@ -97,10 +95,8 @@
       <file leaf-file-name="TFIDFMapper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tfidf/mapper/TFIDFMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="1" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="30" column="1" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="648">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,10 +104,8 @@
       <file leaf-file-name="TermFrequency.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="87" selection-start="3441" selection-end="3441" vertical-scroll-proportion="0.0" vertical-offset="1493" max-vertical-offset="2394">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="71" column="87" selection-start="3441" selection-end="3441" vertical-scroll-proportion="0.0" vertical-offset="1278" max-vertical-offset="2394">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -119,10 +113,8 @@
       <file leaf-file-name="FleschReadingEaseReducer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="97" selection-start="304" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="13" column="97" selection-start="304" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="666">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,10 +122,8 @@
       <file leaf-file-name="FleschMapper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="13" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="1638">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="38" column="13" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1782">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,7 +131,7 @@
       <file leaf-file-name="DocumentComparator.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/readability/util/DocumentComparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="76" selection-start="2346" selection-end="2346" vertical-scroll-proportion="0.9589041" vertical-offset="510" max-vertical-offset="1512">
+            <state line="42" column="12" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.6164383" vertical-offset="216" max-vertical-offset="1494">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -149,10 +139,19 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="FleschGradeLevel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschGradeLevel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="53" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="FleschReadingEase.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="34" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+            <state line="41" column="32" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
               <folding />
             </state>
           </provider>
@@ -183,7 +182,6 @@
         <option value="$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java" />
         <option value="$PROJECT_DIR$/src/readability/util/FleschWritable.java" />
         <option value="$PROJECT_DIR$/src/readability/reducer/FleschKincaidGradeLevelReducer.java" />
-        <option value="$PROJECT_DIR$/src/readability/runner/FleschGradeLevel.java" />
         <option value="$PROJECT_DIR$/src/readability/mapper/FleschMapper.java" />
         <option value="$PROJECT_DIR$/src/test/mapper/YarnWordCountMapper.java" />
         <option value="$PROJECT_DIR$/src/ngram/mapper/NGramCalculationMapper.java" />
@@ -216,8 +214,9 @@
         <option value="$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java" />
         <option value="$PROJECT_DIR$/src/tfidf/mapper/IDFMapper.java" />
         <option value="$PROJECT_DIR$/src/tfidf/reducer/TFIDFReducer.java" />
-        <option value="$PROJECT_DIR$/src/readability/util/DocumentComparator.java" />
         <option value="$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java" />
+        <option value="$PROJECT_DIR$/src/readability/util/DocumentComparator.java" />
+        <option value="$PROJECT_DIR$/src/readability/runner/FleschGradeLevel.java" />
       </list>
     </option>
   </component>
@@ -253,7 +252,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -579,6 +577,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -593,6 +592,10 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
+    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -782,7 +785,11 @@
       <created>1398324415019</created>
       <updated>1398324415019</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Verified works for full corpus.  Working on sorting output from Flesch functions based on document year">
+      <created>1398404581799</created>
+      <updated>1398404581799</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -794,7 +801,6 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24167562" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -806,10 +812,11 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20437567" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20437567" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24167562" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
@@ -832,7 +839,8 @@
     <MESSAGE value="Working on term frequency" />
     <MESSAGE value="Need to figure out custom key" />
     <MESSAGE value="TFIDF seems to be working.  Need to cleanup code" />
-    <option name="LAST_COMMIT_MESSAGE" value="TFIDF seems to be working.  Need to cleanup code" />
+    <MESSAGE value="Verified works for full corpus.  Working on sorting output from Flesch functions based on document year" />
+    <option name="LAST_COMMIT_MESSAGE" value="Verified works for full corpus.  Working on sorting output from Flesch functions based on document year" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -842,6 +850,108 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/tfidf/mapper/TFIDFMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="1" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="87" selection-start="3441" selection-end="3441" vertical-scroll-proportion="0.0" vertical-offset="1278" max-vertical-offset="2394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="97" selection-start="304" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="13" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/util/DocumentComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="76" selection-start="2346" selection-end="2346" vertical-scroll-proportion="0.0" vertical-offset="588" max-vertical-offset="1512">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="34" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tfidf/reducer/TFIDFReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="13" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1116">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/util/FleschWritable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="42" selection-start="1716" selection-end="1716" vertical-scroll-proportion="0.0" vertical-offset="1206" max-vertical-offset="1638">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tfidf/mapper/TFIDFMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="1" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="648">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="87" selection-start="3441" selection-end="3441" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2394">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="97" selection-start="304" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="234" max-vertical-offset="666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="13" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/util/DocumentComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="76" selection-start="2346" selection-end="2346" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1512">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="34" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/tfidf/util/TermFrequencyWritable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="13" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="1386">
@@ -858,9 +968,7 @@
     <entry file="file://$PROJECT_DIR$/src/readability/util/FleschWritable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="0" selection-start="797" selection-end="1414" vertical-scroll-proportion="0.0" vertical-offset="594" max-vertical-offset="1638">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -888,9 +996,7 @@
     <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="13" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1782">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -910,29 +1016,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschGradeLevel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="17" selection-start="693" selection-end="693" vertical-scroll-proportion="0.3207547" vertical-offset="71" max-vertical-offset="972">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/runner/WordCountRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="5" selection-start="533" selection-end="1412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-          <folding />
-        </state>
+        <state line="34" column="5" selection-start="533" selection-end="1412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/mapper/YarnWordCountMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="86" selection-start="323" selection-end="376" vertical-scroll-proportion="0.15982242" vertical-offset="0" max-vertical-offset="901">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="14" column="86" selection-start="323" selection-end="376" vertical-scroll-proportion="0.15982242" vertical-offset="0" max-vertical-offset="901" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java">
@@ -993,7 +1084,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="5" selection-start="321" selection-end="2095" vertical-scroll-proportion="0.0" vertical-offset="924" max-vertical-offset="1800">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1031,7 +1122,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="1" selection-start="263" selection-end="688" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1066,8 +1157,8 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="28" selection-start="949" selection-end="949" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#638#646#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#638#646#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1102,37 +1193,28 @@
     <entry file="file://$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="87" selection-start="3441" selection-end="3441" vertical-scroll-proportion="0.0" vertical-offset="1493" max-vertical-offset="2394">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tfidf/mapper/TFIDFMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="1" selection-start="935" selection-end="935" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tfidf/reducer/TFIDFReducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="13" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="1116">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#717#733#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="13" selection-start="1192" selection-end="1192" vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="1638">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,22 +1228,27 @@
     <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschReadingEaseReducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="97" selection-start="304" selection-end="363" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschReadingEase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="34" selection-start="1800" selection-end="1800" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+        <state line="41" column="32" selection-start="1734" selection-end="1734" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschGradeLevel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="53" selection-start="1032" selection-end="1032" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="738">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/util/DocumentComparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="76" selection-start="2346" selection-end="2346" vertical-scroll-proportion="0.9589041" vertical-offset="510" max-vertical-offset="1512">
+        <state line="42" column="12" selection-start="1159" selection-end="1159" vertical-scroll-proportion="0.6164383" vertical-offset="216" max-vertical-offset="1494">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

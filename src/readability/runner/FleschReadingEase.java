@@ -39,7 +39,7 @@ public class FleschReadingEase
         FileOutputFormat.setOutputPath(job, new Path(args[1])); // output path
         job.setMapperClass(FleschMapper.class); // mapper class
         job.setReducerClass(FleschReadingEaseReducer.class); // reducer class
-//        job.setSortComparatorClass(DocumentComparator.class);
+        job.setSortComparatorClass(DocumentComparator.class);
         job.setMapOutputKeyClass(Text.class);
         job.setMapOutputValueClass(FleschWritable.class);
         job.setOutputKeyClass(Text.class); // the key

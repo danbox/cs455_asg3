@@ -45,18 +45,17 @@ public class DocumentComparator extends WritableComparator
     {
         Text text1 = (Text)a;
         Text text2 = (Text)b;
-//        Integer year1, year2;
 
         StringBuilder stringBuilder1 = new StringBuilder();
         StringBuilder stringBuilder2 = new StringBuilder();
 
-        stringBuilder1.append(text1.toString().substring(0,3));
-        stringBuilder2.append(text2.toString().substring(0,3));
+
         if(Character.isDigit(text1.toString().charAt(11)))
         {
             stringBuilder1.append(text1.toString().substring(8, 12));
         } else
         {
+            stringBuilder1.append(0);
             stringBuilder1.append(text1.toString().substring(8, 11));
         }
 
@@ -65,13 +64,13 @@ public class DocumentComparator extends WritableComparator
             stringBuilder2.append(text2.toString().substring(8, 12));
         } else
         {
-            stringBuilder1.append(text2.toString().substring(8, 11));
+            stringBuilder2.append(0);
+            stringBuilder2.append(text2.toString().substring(8, 11));
         }
 
-////        if(year1.compareTo(year2) == 0 && Integer.parseInt(text1.toString().substring(0,3)) != Integer.parseInt(text2.toString().substring(0,3)))
-////        {
-////            return -1;
-//        }
+        stringBuilder1.append(text1.toString().substring(0,3));
+        stringBuilder2.append(text2.toString().substring(0,3));
+
 
         return stringBuilder1.toString().compareTo(stringBuilder2.toString());
     }
