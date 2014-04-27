@@ -55,6 +55,10 @@ public class DocumentComparator extends WritableComparator
             stringBuilder1.append(text1.toString().substring(8, 12));
         } else
         {
+            if(Character.isAlphabetic(text1.toString().charAt(11)))
+            {
+                stringBuilder1.append('-');
+            }
             stringBuilder1.append(0);
             stringBuilder1.append(text1.toString().substring(8, 11));
         }
@@ -64,6 +68,10 @@ public class DocumentComparator extends WritableComparator
             stringBuilder2.append(text2.toString().substring(8, 12));
         } else
         {
+            if(Character.isAlphabetic(text2.toString().charAt(11)))
+            {
+                stringBuilder2.append('-');
+            }
             stringBuilder2.append(0);
             stringBuilder2.append(text2.toString().substring(8, 11));
         }
@@ -71,7 +79,9 @@ public class DocumentComparator extends WritableComparator
         stringBuilder1.append(text1.toString().substring(0,3));
         stringBuilder2.append(text2.toString().substring(0,3));
 
+        Integer int1 = Integer.parseInt(stringBuilder1.toString());
+        Integer int2 = Integer.parseInt(stringBuilder2.toString());
 
-        return stringBuilder1.toString().compareTo(stringBuilder2.toString());
+        return int1.compareTo(int2);
     }
 }
