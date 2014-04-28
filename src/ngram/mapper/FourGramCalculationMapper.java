@@ -45,18 +45,9 @@ public class FourGramCalculationMapper extends Mapper<NGramWritableComparable, I
         {
             fourth = tok.nextToken();
             context.write(new NGramWritableComparable(filename, first + " " +  second + " " + third + " " + fourth), new IntWritable(1));
-            if(tok.hasMoreTokens())
-            {
-                first = tok.nextToken();
-                if(tok.hasMoreTokens())
-                {
-                    second = tok.nextToken();
-                    if(tok.hasMoreTokens())
-                    {
-                        third = tok.nextToken();
-                    }
-                }
-            }
+            first = second;
+            second = third;
+            third = fourth;
         }
     }
 

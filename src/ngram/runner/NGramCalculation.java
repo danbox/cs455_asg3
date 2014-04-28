@@ -1,5 +1,7 @@
 package ngram.runner;
 
+import ngram.mapper.BigramCalculationMapper;
+import ngram.mapper.TrigramCalculationMapper;
 import ngram.mapper.UnigramCalculationMapper;
 import ngram.reducer.NGramCalculationReducer;
 import ngram.util.NGramWritableComparable;
@@ -26,7 +28,7 @@ public class NGramCalculation
         job.setJobName("N-gram Calculation"); //name of this job.
         FileInputFormat.addInputPath(job, new Path(args[0])); //input path
         FileOutputFormat.setOutputPath(job, new Path(args[1])); //output path
-        job.setMapperClass(UnigramCalculationMapper.class); //test.mapper class
+        job.setMapperClass(TrigramCalculationMapper.class); //test.mapper class
         job.setCombinerClass(NGramCalculationReducer.class); //optional
         job.setReducerClass(NGramCalculationReducer.class); //reducer class
         job.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs

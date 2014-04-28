@@ -42,14 +42,8 @@ public class TrigramCalculationMapper extends Mapper<LongWritable, Text, NGramWr
         {
             third = tok.nextToken();
             context.write(new NGramWritableComparable(filename, first + " " +  second + " " + third), new IntWritable(1));
-            if(tok.hasMoreTokens())
-            {
-                first = tok.nextToken();
-                if(tok.hasMoreTokens())
-                {
-                    second = tok.nextToken();
-                }
-            }
+            first = second;
+            second = third;
         }
     }
 }
