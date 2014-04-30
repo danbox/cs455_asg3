@@ -49,10 +49,6 @@ public class TFIDFVector
         job.setReducerClass(NGramCalculationReducer.class); //reducer class
         job.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
         job.setOutputValueClass(IntWritable.class); // the value
-//        job.setGroupingComparatorClass(NGramGroupingComparator.class);
-//        job.setPartitionerClass(TermPartitioner.class);
-//        job.setSortComparatorClass(NGramComparator.class);
-//        System.exit( job.waitForCompletion(true) ? 0 : 1);
         job.waitForCompletion(true);
 
         //max term job
@@ -66,9 +62,6 @@ public class TFIDFVector
         job2.setReducerClass(MaxTermReducer.class); //reducer class
         job2.setOutputKeyClass(Text.class); // the key your reducer outputs
         job2.setOutputValueClass(IntWritable.class); // the value
-//        job2.setGroupingComparatorClass(NGramGroupingComparator.class);
-//        job2.setPartitionerClass(TermPartitioner.class);
-//        job2.setSortComparatorClass(NGramComparator.class);
         job2.waitForCompletion(true);
 
         //TF job
@@ -78,15 +71,10 @@ public class TFIDFVector
         FileInputFormat.addInputPath(job3, new Path("/books/temp/ng/")); //input path
         FileOutputFormat.setOutputPath(job3, new Path("/books/temp/tf")); //output path
         job3.setMapperClass(TFUniMapper.class); //test.mapper class
-//        job3.setCombinerClass(TFReducer.class); //optional
         job3.setReducerClass(TFReducer.class); //reducer class
         job3.setMapOutputValueClass(IntWritable.class);
         job3.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
         job3.setOutputValueClass(DoubleWritable.class); // the value
-//        job3.setGroupingComparatorClass(NGramGroupingComparator.class);
-//        job3.setPartitionerClass(TermPartitioner.class);
-//        job3.setSortComparatorClass(NGramComparator.class);
-//        System.exit( job3.waitForCompletion(true) ? 0 : 1);
         job3.waitForCompletion(true);
 
 
@@ -101,15 +89,10 @@ public class TFIDFVector
         FileInputFormat.addInputPath(job4, new Path("/books/temp/ng/")); //input path
         FileOutputFormat.setOutputPath(job4, new Path("/books/temp/idf")); //output path
         job4.setMapperClass(IDFUniMapper.class); //test.mapper class
-//        job4.setCombinerClass(IDFReducer.class); //optional
         job4.setReducerClass(IDFReducer.class); //reducer class
         job4.setMapOutputValueClass(IntWritable.class);
         job4.setOutputKeyClass(Text.class); // the key your reducer outputs
         job4.setOutputValueClass(DoubleWritable.class); // the value
-//        job4.setGroupingComparatorClass(NGramGroupingComparator.class);
-//        job4.setPartitionerClass(TermPartitioner.class);
-//        job4.setSortComparatorClass(NGramComparator.class);
-//        System.exit( job4.waitForCompletion(true) ? 0 : 1);
         job4.waitForCompletion(true);
 
         //TFIDF job
@@ -119,15 +102,9 @@ public class TFIDFVector
         FileInputFormat.addInputPath(job5, new Path("/books/temp/tf/")); //input path
         FileOutputFormat.setOutputPath(job5, new Path("/books/temp/tfidf")); //output path
         job5.setMapperClass(TFIDFUniMapper.class); //test.mapper class
-//        job5.setCombinerClass(TFReducer.class); //optional
         job5.setReducerClass(TFIDFUniReducer.class); //reducer class
-//        job5.setMapOutputValueClass(IntWritable.class);
         job5.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
         job5.setOutputValueClass(DoubleWritable.class); // the value
-//        job5.setGroupingComparatorClass(NGramGroupingComparator.class);
-//        job5.setPartitionerClass(TermPartitioner.class);
-//        job5.setSortComparatorClass(NGramComparator.class);
-//        System.exit( job5.waitForCompletion(true) ? 0 : 1);
         job5.waitForCompletion(true);
 
         Job job6 = Job.getInstance(new Configuration());
@@ -136,16 +113,11 @@ public class TFIDFVector
         FileInputFormat.addInputPath(job6, new Path("/books/temp/tfidf/")); //input path
         FileOutputFormat.setOutputPath(job6, new Path("/books/temp/uniq/")); //output path
         job6.setMapperClass(UniqueMapper.class); //test.mapper class
-//        job6.setCombinerClass(NGramCalculationReducer.class); //optional
         job6.setReducerClass(UniqueReducer.class); //reducer class
         job6.setMapOutputKeyClass(Text.class);
         job6.setMapOutputValueClass(DecadeValueWritable.class);
         job6.setOutputKeyClass(IntWritable.class); // the key your reducer outputs
         job6.setOutputValueClass(TermValueWritable.class); // the value
-//        job6.setGroupingComparatorClass(NGramGroupingComparator.class);
-//        job6.setPartitionerClass(TermPartitioner.class);
-//        job6.setSortComparatorClass(NGramComparator.class);
-//        System.exit( job6.waitForCompletion(true) ? 0 : 1);
         job6.waitForCompletion(true);
 
         Job job7 = Job.getInstance(new Configuration());
@@ -154,16 +126,10 @@ public class TFIDFVector
         FileInputFormat.addInputPath(job7, new Path("/books/temp/uniq/")); //input path
         FileOutputFormat.setOutputPath(job7, new Path(args[1])); //output path
         job7.setMapperClass(TFIDFVectorMapper.class); //test.mapper class
-//        job7.setCombinerClass(NGramCalculationReducer.class); //optional
         job7.setReducerClass(TFIDFVectorReducer.class); //reducer class
-//        job7.setMapOutputKeyClass(IntWritable.class);
         job7.setMapOutputValueClass(TermValueWritable.class);
         job7.setOutputKeyClass(IntWritable.class); // the key your reducer outputs
         job7.setOutputValueClass(Text.class); // the value
-//        job7.setGroupingComparatorClass(NGramGroupingComparator.class);
-//        job7.setPartitionerClass(TermPartitioner.class);
-//        job7.setSortComparatorClass(NGramComparator.class);
         System.exit( job7.waitForCompletion(true) ? 0 : 1);
-//        job7.waitForCompletion(true);
     }
 }

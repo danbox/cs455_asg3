@@ -6,36 +6,23 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ea20e7-03ed-45a9-a24c-457f380a78ba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/bi/IDFBiMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/four/IDFFourMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/tri/IDFTriMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/bi/MaxTermBiMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/four/MaxTermFourMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/tri/MaxTermTriMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/bi/TFBiMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/four/TFFourMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/bi/TFIDFBiMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/reducer/bi/TFIDFBiReducer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/four/TFIDFFourMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/reducer/four/TFIDFFourReducer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/tri/TFIDFTriMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/reducer/tri/TFIDFTriReducer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/tfidf/mapper/tri/TFTriMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/Tester.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tfidf/mapper/IDFMapper.java" afterPath="$PROJECT_DIR$/src/tfidf/mapper/uni/IDFUniMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tfidf/mapper/MaxTermMapper.java" afterPath="$PROJECT_DIR$/src/tfidf/mapper/uni/MaxTermUniMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tfidf/mapper/TFIDFMapper.java" afterPath="$PROJECT_DIR$/src/tfidf/mapper/uni/TFIDFUniMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tfidf/mapper/TFMapper.java" afterPath="$PROJECT_DIR$/src/tfidf/mapper/uni/TFUniMapper.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/tfidf/reducer/TFIDFReducer.java" afterPath="$PROJECT_DIR$/src/tfidf/reducer/uni/TFIDFUniReducer.java" />
+    <list default="true" id="10ea20e7-03ed-45a9-a24c-457f380a78ba" name="Default" comment="Almost done.  Needs testing">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/average_grade_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/average_reading_ease.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flesch_kincaid_grade_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flesch_reading_ease.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grade_level.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grade_level_average.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reading_ease.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reading_ease_average.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unique.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java" afterPath="$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/readability/runner/FleschKincaidGradeLevelAverage.java" afterPath="$PROJECT_DIR$/src/readability/runner/FleschKincaidGradeLevelAverage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/FleschReadingEaseTest.java" afterPath="$PROJECT_DIR$/src/test/FleschReadingEaseTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java" afterPath="$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ngram/runner/NGramCalculation.java" afterPath="$PROJECT_DIR$/src/ngram/runner/NGramCalculation.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/unique/runner/TFIDFVector.java" afterPath="$PROJECT_DIR$/src/unique/runner/TFIDFVector.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java" afterPath="$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java" afterPath="$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java" afterPath="$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/unique/runner/Unique.java" afterPath="$PROJECT_DIR$/src/unique/runner/Unique.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs455_asg3.iws" />
@@ -103,7 +90,7 @@
       <file leaf-file-name="TermFrequency.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="321" column="22" selection-start="18281" selection-end="18281" vertical-scroll-proportion="-13.5" vertical-offset="4968" max-vertical-offset="9540">
+            <state line="345" column="26" selection-start="19418" selection-end="19418" vertical-scroll-proportion="-7.9" vertical-offset="5736" max-vertical-offset="9540">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -111,64 +98,64 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FourGramCalculationMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java">
+      <file leaf-file-name="TFIDFVectorReducer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/unique/reducer/TFIDFVectorReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="44" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
+            <state line="23" column="41" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MaxTermFourMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tfidf/mapper/four/MaxTermFourMapper.java">
+      <file leaf-file-name="UniqueDecadeReducer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/unique/reducer/UniqueDecadeReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="28" selection-start="830" selection-end="830" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648">
+            <state line="13" column="13" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TFFourMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tfidf/mapper/four/TFFourMapper.java">
+      <file leaf-file-name="UniqueReducer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/unique/reducer/UniqueReducer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="158" selection-start="888" selection-end="888" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+            <state line="16" column="13" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TFIDFFourMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tfidf/mapper/four/TFIDFFourMapper.java">
+      <file leaf-file-name="TFIDFVectorMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/unique/mapper/TFIDFVectorMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="158" selection-start="897" selection-end="897" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
+            <state line="26" column="9" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TFIDFFourReducer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tfidf/reducer/four/TFIDFFourReducer.java">
+      <file leaf-file-name="UniqueDecadeMapper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/unique/mapper/UniqueDecadeMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="81" selection-start="1764" selection-end="1764" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="954">
+            <state line="28" column="5" selection-start="324" selection-end="820" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IDFFourMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tfidf/mapper/four/IDFFourMapper.java">
+      <file leaf-file-name="Unique.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/unique/runner/Unique.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="126" selection-start="854" selection-end="854" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="558">
+            <state line="66" column="59" selection-start="3327" selection-end="3327" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1026">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrigramCalculationMapper.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java">
+      <file leaf-file-name="TFIDFVector.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/unique/runner/TFIDFVector.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="35" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.67808217" vertical-offset="0" max-vertical-offset="876">
+            <state line="132" column="59" selection-start="6889" selection-end="6889" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2052">
               <folding />
             </state>
           </provider>
@@ -177,17 +164,19 @@
       <file leaf-file-name="BigramCalculationMapper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="44" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0" vertical-offset="6" max-vertical-offset="882">
+            <state line="34" column="9" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MaxTermTriMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tfidf/mapper/tri/MaxTermTriMapper.java">
+      <file leaf-file-name="UnigramCalculationMapper.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="800" selection-end="800" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
-              <folding />
+            <state line="32" column="9" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.65753424" vertical-offset="0" max-vertical-offset="876">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -215,8 +204,6 @@
         <option value="$PROJECT_DIR$/src/unique/reducer/UniqueReducer.java" />
         <option value="$PROJECT_DIR$/src/unique/mapper/UniqueDecadeMapper.java" />
         <option value="$PROJECT_DIR$/src/unique/mapper/TFIDFVectorMapper.java" />
-        <option value="$PROJECT_DIR$/src/unique/runner/Unique.java" />
-        <option value="$PROJECT_DIR$/src/unique/runner/TFIDFVector.java" />
         <option value="$PROJECT_DIR$/src/unique/reducer/TFIDFVectorReducer.java" />
         <option value="$PROJECT_DIR$/src/unique/mapper/UniqueMapper.java" />
         <option value="$PROJECT_DIR$/src/tfidf/util/FleschReadingEaseTest.java" />
@@ -235,8 +222,6 @@
         <option value="$PROJECT_DIR$/src/tfidf/reducer/TFUniReducer.java" />
         <option value="$PROJECT_DIR$/src/tfidf/reducer/uni/TFUniReducer.java" />
         <option value="$PROJECT_DIR$/src/test/temp.txt" />
-        <option value="$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java" />
-        <option value="$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java" />
         <option value="$PROJECT_DIR$/src/test/test.txt" />
         <option value="$PROJECT_DIR$/src/test/Tester.java" />
         <option value="$PROJECT_DIR$/src/tfidf/reducer/bi/TFIDFBiReducer.java" />
@@ -247,15 +232,19 @@
         <option value="$PROJECT_DIR$/src/tfidf/mapper/tri/TFTriMapper.java" />
         <option value="$PROJECT_DIR$/src/tfidf/mapper/tri/TFIDFTriMapper.java" />
         <option value="$PROJECT_DIR$/src/tfidf/reducer/tri/TFIDFTriReducer.java" />
-        <option value="$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java" />
         <option value="$PROJECT_DIR$/src/tfidf/mapper/four/MaxTermTriMapper.java" />
         <option value="$PROJECT_DIR$/src/tfidf/mapper/four/IDFFourMapper.java" />
         <option value="$PROJECT_DIR$/src/tfidf/mapper/four/MaxTermFourMapper.java" />
         <option value="$PROJECT_DIR$/src/tfidf/mapper/four/TFFourMapper.java" />
         <option value="$PROJECT_DIR$/src/tfidf/mapper/four/TFIDFFourMapper.java" />
         <option value="$PROJECT_DIR$/src/tfidf/reducer/four/TFIDFFourReducer.java" />
-        <option value="$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java" />
+        <option value="$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java" />
         <option value="$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java" />
+        <option value="$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java" />
+        <option value="$PROJECT_DIR$/src/unique/runner/Unique.java" />
+        <option value="$PROJECT_DIR$/src/unique/runner/TFIDFVector.java" />
+        <option value="$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java" />
+        <option value="$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java" />
       </list>
     </option>
   </component>
@@ -321,6 +310,76 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unique" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unique" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unique" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reducer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="unique" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1039,7 +1098,11 @@
       <created>1398653877734</created>
       <updated>1398653877734</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Almost done.  Needs testing">
+      <created>1398845688603</created>
+      <updated>1398845688603</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1093,7 +1156,8 @@
     <MESSAGE value="Got comparator to sort based on year of book publication" />
     <MESSAGE value="Histograms are working as well as plotting averages for Flesch in each decade" />
     <MESSAGE value="Got unique n-grams working and maybe TFIDF vector" />
-    <option name="LAST_COMMIT_MESSAGE" value="Got unique n-grams working and maybe TFIDF vector" />
+    <MESSAGE value="Almost done.  Needs testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost done.  Needs testing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1132,47 +1196,6 @@
         <state line="62" column="27" selection-start="1193" selection-end="1193" vertical-scroll-proportion="-18.6" vertical-offset="0" max-vertical-offset="1404" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/unique/mapper/UniqueDecadeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="324" selection-end="820" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unique/reducer/UniqueReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unique/reducer/UniqueDecadeReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unique/mapper/TFIDFVectorMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="9" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="666">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unique/runner/Unique.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="8" selection-start="3143" selection-end="4254" vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="1296" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unique/runner/TFIDFVector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="53" selection-start="8637" selection-end="8637" vertical-scroll-proportion="-8.8" vertical-offset="2370" max-vertical-offset="3186" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/unique/reducer/TFIDFVectorReducer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="41" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="648" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/unique/mapper/UniqueMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="44" selection-start="1544" selection-end="1544" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="918">
@@ -1206,12 +1229,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschKincaidGradeLevelAverage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="58" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1278" />
+        <state line="41" column="58" selection-start="1737" selection-end="1737" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="1278">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ngram/runner/NGramCalculation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="75" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0" vertical-offset="43" max-vertical-offset="612" />
+        <state line="32" column="75" selection-start="1362" selection-end="1362" vertical-scroll-proportion="0.0" vertical-offset="43" max-vertical-offset="612">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tfidf/mapper/uni/TFUniMapper.java">
@@ -1312,15 +1343,6 @@
         <state line="549960" column="7" selection-start="7285160" selection-end="7285160" vertical-scroll-proportion="-8.56" vertical-offset="9899066" max-vertical-offset="11034162" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="101" selection-start="1359" selection-end="1359" vertical-scroll-proportion="0.0" vertical-offset="161" max-vertical-offset="864">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="29" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0" vertical-offset="252" max-vertical-offset="2402730">
@@ -1419,33 +1441,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java">
+    <entry file="file://$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="321" column="22" selection-start="18281" selection-end="18281" vertical-scroll-proportion="-13.5" vertical-offset="4968" max-vertical-offset="9540">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="44" selection-start="1586" selection-end="1586" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="882">
+        <state line="26" column="72" selection-start="896" selection-end="896" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="828">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="44" selection-start="921" selection-end="921" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="936">
+        <state line="31" column="9" selection-start="1045" selection-end="1045" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="936">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="35" selection-start="1274" selection-end="1274" vertical-scroll-proportion="0.67808217" vertical-offset="0" max-vertical-offset="876">
+        <state line="345" column="26" selection-start="19418" selection-end="19418" vertical-scroll-proportion="-7.9" vertical-offset="5736" max-vertical-offset="9540">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unique/mapper/TFIDFVectorMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="9" selection-start="763" selection-end="763" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="522">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unique/mapper/UniqueDecadeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="5" selection-start="324" selection-end="820" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unique/reducer/TFIDFVectorReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="41" selection-start="780" selection-end="780" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unique/reducer/UniqueDecadeReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="258" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unique/reducer/UniqueReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unique/runner/Unique.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="59" selection-start="3327" selection-end="3327" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1026">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/unique/runner/TFIDFVector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="132" column="59" selection-start="6889" selection-end="6889" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2052">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="9" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="9" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.65753424" vertical-offset="0" max-vertical-offset="876">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

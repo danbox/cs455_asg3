@@ -56,223 +56,223 @@ public class TermFrequency
 //        }
 //        System.exit(success ? 0 : 1);
 
-//        //N-Gram uniJob
-//        Job uniJob = Job.getInstance(new Configuration());
-//        uniJob.setJarByClass(TermFrequency.class); //this class's name
-//        uniJob.setJobName("N-Gram Calculation"); //name of this uniJob.
-//        FileInputFormat.addInputPath(uniJob, new Path(args[0])); //input path
-//        FileOutputFormat.setOutputPath(uniJob, new Path("/books/temp/ng")); //output path
-//        uniJob.setMapperClass(UnigramCalculationMapper.class); //test.mapper class
-//        uniJob.setCombinerClass(NGramCalculationReducer.class); //optional
-//        uniJob.setReducerClass(NGramCalculationReducer.class); //reducer class
-//        uniJob.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
-//        uniJob.setOutputValueClass(IntWritable.class); // the value
-//        uniJob.waitForCompletion(true);
-//
-//        //max term uniJob
-//        Job uniJob2 = Job.getInstance(new Configuration());
-//        uniJob2.setJarByClass(TermFrequency.class); //this class's name
-//        uniJob2.setJobName("Max Term"); //name of this uniJob2.
-//        FileInputFormat.addInputPath(uniJob2, new Path("/books/temp/ng/")); //input path
-//        FileOutputFormat.setOutputPath(uniJob2, new Path("/books/temp/max/")); //output path
-//        uniJob2.setMapperClass(MaxTermUniMapper.class); //test.mapper class
-//        uniJob2.setCombinerClass(MaxTermReducer.class); //optional
-//        uniJob2.setReducerClass(MaxTermReducer.class); //reducer class
-//        uniJob2.setOutputKeyClass(Text.class); // the key your reducer outputs
-//        uniJob2.setOutputValueClass(IntWritable.class); // the value
-//        uniJob2.waitForCompletion(true);
-//
-//        //TF uniJob
-//        Job uniJob3 = Job.getInstance(new Configuration());
-//        uniJob3.setJarByClass(TermFrequency.class); //this class's name
-//        uniJob3.setJobName("TF"); //name of this uniJob3.
-//        FileInputFormat.addInputPath(uniJob3, new Path("/books/temp/ng/")); //input path
-//        FileOutputFormat.setOutputPath(uniJob3, new Path("/books/temp/tf")); //output path
-//        uniJob3.setMapperClass(TFUniMapper.class); //test.mapper class
-//        uniJob3.setReducerClass(TFReducer.class); //reducer class
-//        uniJob3.setMapOutputValueClass(IntWritable.class);
-//        uniJob3.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
-//        uniJob3.setOutputValueClass(DoubleWritable.class); // the value
-//        uniJob3.waitForCompletion(true);
-//
-//        //IDF uniJob
-//        Configuration configuration = new Configuration();
-//        FileSystem fileSystem = FileSystem.get(configuration);
-//        Path path = new Path(args[0]);
-//        configuration.setLong("fileCount", fileSystem.listStatus(path).length);
-//        Job uniJob4 = Job.getInstance(configuration);
-//        uniJob4.setJarByClass(TermFrequency.class); //this class's name
-//        uniJob4.setJobName("IDF"); //name of this uniJob4.
-//        FileInputFormat.addInputPath(uniJob4, new Path("/books/temp/ng/")); //input path
-//        FileOutputFormat.setOutputPath(uniJob4, new Path("/books/temp/idf")); //output path
-//        uniJob4.setMapperClass(IDFUniMapper.class); //test.mapper class
-//        uniJob4.setReducerClass(IDFReducer.class); //reducer class
-//        uniJob4.setMapOutputValueClass(IntWritable.class);
-//        uniJob4.setOutputKeyClass(Text.class); // the key your reducer outputs
-//        uniJob4.setOutputValueClass(DoubleWritable.class); // the value
-//        uniJob4.waitForCompletion(true);
-//
-//        //TFIDF uniJob
-//        Job uniJob5 = Job.getInstance(new Configuration());
-//        uniJob5.setJarByClass(TermFrequency.class); //this class's name
-//        uniJob5.setJobName("TFIDF"); //name of this uniJob5.
-//        FileInputFormat.addInputPath(uniJob5, new Path("/books/temp/tf/")); //input path
-//        String output = args[1] + "/uni";
-//        FileOutputFormat.setOutputPath(uniJob5, new Path(output)); //output path
-//        uniJob5.setMapperClass(TFIDFUniMapper.class); //test.mapper class
-//        uniJob5.setReducerClass(TFIDFUniReducer.class); //reducer class
-//        uniJob5.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
-//        uniJob5.setOutputValueClass(DoubleWritable.class); // the value
-//        uniJob5.waitForCompletion(true);
-//
-//        FileSystem fs = FileSystem.get(new Configuration());
-//        fs.delete(new Path("/books/temp/"), true);
+        //N-Gram uniJob
+        Job uniJob = Job.getInstance(new Configuration());
+        uniJob.setJarByClass(TermFrequency.class); //this class's name
+        uniJob.setJobName("N-Gram Calculation"); //name of this uniJob.
+        FileInputFormat.addInputPath(uniJob, new Path(args[0])); //input path
+        FileOutputFormat.setOutputPath(uniJob, new Path("/books/temp/ng")); //output path
+        uniJob.setMapperClass(UnigramCalculationMapper.class); //test.mapper class
+        uniJob.setCombinerClass(NGramCalculationReducer.class); //optional
+        uniJob.setReducerClass(NGramCalculationReducer.class); //reducer class
+        uniJob.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
+        uniJob.setOutputValueClass(IntWritable.class); // the value
+        uniJob.waitForCompletion(true);
 
-//        //N-Gram biJob
-//        Job biJob = Job.getInstance(new Configuration());
-//        biJob.setJarByClass(TermFrequency.class); //this class's name
-//        biJob.setJobName("N-Gram Calculation"); //name of this biJob.
-//        FileInputFormat.addInputPath(biJob, new Path(args[0])); //input path
-//        FileOutputFormat.setOutputPath(biJob, new Path("/books/temp/ng")); //output path
-//        biJob.setMapperClass(BigramCalculationMapper.class); //test.mapper class
-//        biJob.setCombinerClass(NGramCalculationReducer.class); //optional
-//        biJob.setReducerClass(NGramCalculationReducer.class); //reducer class
-//        biJob.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
-//        biJob.setOutputValueClass(IntWritable.class); // the value
-//        biJob.waitForCompletion(true);
-//
-//        //max term biJob
-//        Job biJob2 = Job.getInstance(new Configuration());
-//        biJob2.setJarByClass(TermFrequency.class); //this class's name
-//        biJob2.setJobName("Max Term"); //name of this biJob2.
-//        FileInputFormat.addInputPath(biJob2, new Path("/books/temp/ng/")); //input path
-//        FileOutputFormat.setOutputPath(biJob2, new Path("/books/temp/max/")); //output path
-//        biJob2.setMapperClass(MaxTermBiMapper.class); //test.mapper class
-//        biJob2.setCombinerClass(MaxTermReducer.class); //optional
-//        biJob2.setReducerClass(MaxTermReducer.class); //reducer class
-//        biJob2.setOutputKeyClass(Text.class); // the key your reducer outputs
-//        biJob2.setOutputValueClass(IntWritable.class); // the value
-//        biJob2.waitForCompletion(true);
-//
-//        //TF biJob
-//        Job biJob3 = Job.getInstance(new Configuration());
-//        biJob3.setJarByClass(TermFrequency.class); //this class's name
-//        biJob3.setJobName("TF"); //name of this biJob3.
-//        FileInputFormat.addInputPath(biJob3, new Path("/books/temp/ng/")); //input path
-//        FileOutputFormat.setOutputPath(biJob3, new Path("/books/temp/tf")); //output path
-//        biJob3.setMapperClass(TFBiMapper.class); //test.mapper class
-//        biJob3.setReducerClass(TFReducer.class); //reducer class
-//        biJob3.setMapOutputValueClass(IntWritable.class);
-//        biJob3.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
-//        biJob3.setOutputValueClass(DoubleWritable.class); // the value
-//        biJob3.waitForCompletion(true);
-//
-//        //IDF biJob
-//        Configuration configuration2 = new Configuration();
-//        FileSystem fileSystem2 = FileSystem.get(configuration2);
-//        Path path2 = new Path(args[0]);
-//        configuration2.setLong("fileCount", fileSystem2.listStatus(path2).length);
-//        Job biJob4 = Job.getInstance(configuration2);
-//        biJob4.setJarByClass(TermFrequency.class); //this class's name
-//        biJob4.setJobName("IDF"); //name of this biJob4.
-//        FileInputFormat.addInputPath(biJob4, new Path("/books/temp/ng/")); //input path
-//        FileOutputFormat.setOutputPath(biJob4, new Path("/books/temp/idf")); //output path
-//        biJob4.setMapperClass(IDFBiMapper.class); //test.mapper class
-//        biJob4.setReducerClass(IDFReducer.class); //reducer class
-//        biJob4.setMapOutputValueClass(IntWritable.class);
-//        biJob4.setOutputKeyClass(Text.class); // the key your reducer outputs
-//        biJob4.setOutputValueClass(DoubleWritable.class); // the value
-//        biJob4.waitForCompletion(true);
-//
-//        //TFIDF biJob
-//        Job biJob5 = Job.getInstance(new Configuration());
-//        biJob5.setJarByClass(TermFrequency.class); //this class's name
-//        biJob5.setJobName("TFIDF"); //name of this biJob5.
-//        FileInputFormat.addInputPath(biJob5, new Path("/books/temp/tf/")); //input path
-//        String output = args[1] + "/bi";
-//        FileOutputFormat.setOutputPath(biJob5, new Path(output)); //output path
-//        biJob5.setMapperClass(TFIDFBiMapper.class); //test.mapper class
-//        biJob5.setReducerClass(TFIDFBiReducer.class); //reducer class
-//        biJob5.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
-//        biJob5.setOutputValueClass(DoubleWritable.class); // the value
-//        boolean success = biJob5.waitForCompletion(true);
-//
-//        FileSystem fs2 = FileSystem.get(new Configuration());
-//        fs2.delete(new Path("/books/temp/"), true);
+        //max term uniJob
+        Job uniJob2 = Job.getInstance(new Configuration());
+        uniJob2.setJarByClass(TermFrequency.class); //this class's name
+        uniJob2.setJobName("Max Term"); //name of this uniJob2.
+        FileInputFormat.addInputPath(uniJob2, new Path("/books/temp/ng/")); //input path
+        FileOutputFormat.setOutputPath(uniJob2, new Path("/books/temp/max/")); //output path
+        uniJob2.setMapperClass(MaxTermUniMapper.class); //test.mapper class
+        uniJob2.setCombinerClass(MaxTermReducer.class); //optional
+        uniJob2.setReducerClass(MaxTermReducer.class); //reducer class
+        uniJob2.setOutputKeyClass(Text.class); // the key your reducer outputs
+        uniJob2.setOutputValueClass(IntWritable.class); // the value
+        uniJob2.waitForCompletion(true);
+
+        //TF uniJob
+        Job uniJob3 = Job.getInstance(new Configuration());
+        uniJob3.setJarByClass(TermFrequency.class); //this class's name
+        uniJob3.setJobName("TF"); //name of this uniJob3.
+        FileInputFormat.addInputPath(uniJob3, new Path("/books/temp/ng/")); //input path
+        FileOutputFormat.setOutputPath(uniJob3, new Path("/books/temp/tf")); //output path
+        uniJob3.setMapperClass(TFUniMapper.class); //test.mapper class
+        uniJob3.setReducerClass(TFReducer.class); //reducer class
+        uniJob3.setMapOutputValueClass(IntWritable.class);
+        uniJob3.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
+        uniJob3.setOutputValueClass(DoubleWritable.class); // the value
+        uniJob3.waitForCompletion(true);
+
+        //IDF uniJob
+        Configuration configuration = new Configuration();
+        FileSystem fileSystem = FileSystem.get(configuration);
+        Path path = new Path(args[0]);
+        configuration.setLong("fileCount", fileSystem.listStatus(path).length);
+        Job uniJob4 = Job.getInstance(configuration);
+        uniJob4.setJarByClass(TermFrequency.class); //this class's name
+        uniJob4.setJobName("IDF"); //name of this uniJob4.
+        FileInputFormat.addInputPath(uniJob4, new Path("/books/temp/ng/")); //input path
+        FileOutputFormat.setOutputPath(uniJob4, new Path("/books/temp/idf")); //output path
+        uniJob4.setMapperClass(IDFUniMapper.class); //test.mapper class
+        uniJob4.setReducerClass(IDFReducer.class); //reducer class
+        uniJob4.setMapOutputValueClass(IntWritable.class);
+        uniJob4.setOutputKeyClass(Text.class); // the key your reducer outputs
+        uniJob4.setOutputValueClass(DoubleWritable.class); // the value
+        uniJob4.waitForCompletion(true);
+
+        //TFIDF uniJob
+        Job uniJob5 = Job.getInstance(new Configuration());
+        uniJob5.setJarByClass(TermFrequency.class); //this class's name
+        uniJob5.setJobName("TFIDF"); //name of this uniJob5.
+        FileInputFormat.addInputPath(uniJob5, new Path("/books/temp/tf/")); //input path
+        String output = args[1] + "/uni";
+        FileOutputFormat.setOutputPath(uniJob5, new Path(output)); //output path
+        uniJob5.setMapperClass(TFIDFUniMapper.class); //test.mapper class
+        uniJob5.setReducerClass(TFIDFUniReducer.class); //reducer class
+        uniJob5.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
+        uniJob5.setOutputValueClass(DoubleWritable.class); // the value
+        uniJob5.waitForCompletion(true);
+
+        FileSystem fs = FileSystem.get(new Configuration());
+        fs.delete(new Path("/books/temp/"), true);
+
+        //N-Gram biJob
+        Job biJob = Job.getInstance(new Configuration());
+        biJob.setJarByClass(TermFrequency.class); //this class's name
+        biJob.setJobName("N-Gram Calculation"); //name of this biJob.
+        FileInputFormat.addInputPath(biJob, new Path(args[0])); //input path
+        FileOutputFormat.setOutputPath(biJob, new Path("/books/temp/ng")); //output path
+        biJob.setMapperClass(BigramCalculationMapper.class); //test.mapper class
+        biJob.setCombinerClass(NGramCalculationReducer.class); //optional
+        biJob.setReducerClass(NGramCalculationReducer.class); //reducer class
+        biJob.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
+        biJob.setOutputValueClass(IntWritable.class); // the value
+        biJob.waitForCompletion(true);
+
+        //max term biJob
+        Job biJob2 = Job.getInstance(new Configuration());
+        biJob2.setJarByClass(TermFrequency.class); //this class's name
+        biJob2.setJobName("Max Term"); //name of this biJob2.
+        FileInputFormat.addInputPath(biJob2, new Path("/books/temp/ng/")); //input path
+        FileOutputFormat.setOutputPath(biJob2, new Path("/books/temp/max/")); //output path
+        biJob2.setMapperClass(MaxTermBiMapper.class); //test.mapper class
+        biJob2.setCombinerClass(MaxTermReducer.class); //optional
+        biJob2.setReducerClass(MaxTermReducer.class); //reducer class
+        biJob2.setOutputKeyClass(Text.class); // the key your reducer outputs
+        biJob2.setOutputValueClass(IntWritable.class); // the value
+        biJob2.waitForCompletion(true);
+
+        //TF biJob
+        Job biJob3 = Job.getInstance(new Configuration());
+        biJob3.setJarByClass(TermFrequency.class); //this class's name
+        biJob3.setJobName("TF"); //name of this biJob3.
+        FileInputFormat.addInputPath(biJob3, new Path("/books/temp/ng/")); //input path
+        FileOutputFormat.setOutputPath(biJob3, new Path("/books/temp/tf")); //output path
+        biJob3.setMapperClass(TFBiMapper.class); //test.mapper class
+        biJob3.setReducerClass(TFReducer.class); //reducer class
+        biJob3.setMapOutputValueClass(IntWritable.class);
+        biJob3.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
+        biJob3.setOutputValueClass(DoubleWritable.class); // the value
+        biJob3.waitForCompletion(true);
+
+        //IDF biJob
+        Configuration configuration2 = new Configuration();
+        FileSystem fileSystem2 = FileSystem.get(configuration2);
+        Path path2 = new Path(args[0]);
+        configuration2.setLong("fileCount", fileSystem2.listStatus(path2).length);
+        Job biJob4 = Job.getInstance(configuration2);
+        biJob4.setJarByClass(TermFrequency.class); //this class's name
+        biJob4.setJobName("IDF"); //name of this biJob4.
+        FileInputFormat.addInputPath(biJob4, new Path("/books/temp/ng/")); //input path
+        FileOutputFormat.setOutputPath(biJob4, new Path("/books/temp/idf")); //output path
+        biJob4.setMapperClass(IDFBiMapper.class); //test.mapper class
+        biJob4.setReducerClass(IDFReducer.class); //reducer class
+        biJob4.setMapOutputValueClass(IntWritable.class);
+        biJob4.setOutputKeyClass(Text.class); // the key your reducer outputs
+        biJob4.setOutputValueClass(DoubleWritable.class); // the value
+        biJob4.waitForCompletion(true);
+
+        //TFIDF biJob
+        Job biJob5 = Job.getInstance(new Configuration());
+        biJob5.setJarByClass(TermFrequency.class); //this class's name
+        biJob5.setJobName("TFIDF"); //name of this biJob5.
+        FileInputFormat.addInputPath(biJob5, new Path("/books/temp/tf/")); //input path
+        output = args[1] + "/bi";
+        FileOutputFormat.setOutputPath(biJob5, new Path(output)); //output path
+        biJob5.setMapperClass(TFIDFBiMapper.class); //test.mapper class
+        biJob5.setReducerClass(TFIDFBiReducer.class); //reducer class
+        biJob5.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
+        biJob5.setOutputValueClass(DoubleWritable.class); // the value
+        biJob5.waitForCompletion(true);
+
+        FileSystem fs2 = FileSystem.get(new Configuration());
+        fs2.delete(new Path("/books/temp/"), true);
         
 //        System.exit(success ? 0 : 1);
 
         //N-Gram triJob
-//        Job triJob = Job.getInstance(new Configuration());
-//        triJob.setJarByClass(TermFrequency.class); //this class's name
-//        triJob.setJobName("N-Gram Calculation"); //name of this triJob.
-//        FileInputFormat.addInputPath(triJob, new Path(args[0])); //input path
-//        FileOutputFormat.setOutputPath(triJob, new Path("/books/temp/ng")); //output path
-//        triJob.setMapperClass(TrigramCalculationMapper.class); //test.mapper class
-//        triJob.setCombinerClass(NGramCalculationReducer.class); //optional
-//        triJob.setReducerClass(NGramCalculationReducer.class); //reducer class
-//        triJob.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
-//        triJob.setOutputValueClass(IntWritable.class); // the value
-//        triJob.waitForCompletion(true);
-//
-//        //max term triJob
-//        Job triJob2 = Job.getInstance(new Configuration());
-//        triJob2.setJarByClass(TermFrequency.class); //this class's name
-//        triJob2.setJobName("Max Term"); //name of this triJob2.
-//        FileInputFormat.addInputPath(triJob2, new Path("/books/temp/ng/")); //input path
-//        FileOutputFormat.setOutputPath(triJob2, new Path("/books/temp/max/")); //output path
-//        triJob2.setMapperClass(MaxTermTriMapper.class); //test.mapper class
-//        triJob2.setCombinerClass(MaxTermReducer.class); //optional
-//        triJob2.setReducerClass(MaxTermReducer.class); //reducer class
-//        triJob2.setOutputKeyClass(Text.class); // the key your reducer outputs
-//        triJob2.setOutputValueClass(IntWritable.class); // the value
-//        triJob2.waitForCompletion(true);
-//
-//        //TF triJob
-//        Job triJob3 = Job.getInstance(new Configuration());
-//        triJob3.setJarByClass(TermFrequency.class); //this class's name
-//        triJob3.setJobName("TF"); //name of this triJob3.
-//        FileInputFormat.addInputPath(triJob3, new Path("/books/temp/ng/")); //input path
-//        FileOutputFormat.setOutputPath(triJob3, new Path("/books/temp/tf")); //output path
-//        triJob3.setMapperClass(TFTriMapper.class); //test.mapper class
-//        triJob3.setReducerClass(TFReducer.class); //reducer class
-//        triJob3.setMapOutputValueClass(IntWritable.class);
-//        triJob3.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
-//        triJob3.setOutputValueClass(DoubleWritable.class); // the value
-//        triJob3.waitForCompletion(true);
-//
-//        //IDF triJob
-//        Configuration configuration3 = new Configuration();
-//        FileSystem fileSystem3 = FileSystem.get(configuration3);
-//        Path path3 = new Path(args[0]);
-//        configuration3.setLong("fileCount", fileSystem3.listStatus(path3).length);
-//        Job triJob4 = Job.getInstance(configuration3);
-//        triJob4.setJarByClass(TermFrequency.class); //this class's name
-//        triJob4.setJobName("IDF"); //name of this triJob4.
-//        FileInputFormat.addInputPath(triJob4, new Path("/books/temp/ng/")); //input path
-//        FileOutputFormat.setOutputPath(triJob4, new Path("/books/temp/idf")); //output path
-//        triJob4.setMapperClass(IDFTriMapper.class); //test.mapper class
-//        triJob4.setReducerClass(IDFReducer.class); //reducer class
-//        triJob4.setMapOutputValueClass(IntWritable.class);
-//        triJob4.setOutputKeyClass(Text.class); // the key your reducer outputs
-//        triJob4.setOutputValueClass(DoubleWritable.class); // the value
-//        triJob4.waitForCompletion(true);
-//
-//        //TFIDF triJob
-//        Job triJob5 = Job.getInstance(new Configuration());
-//        triJob5.setJarByClass(TermFrequency.class); //this class's name
-//        triJob5.setJobName("TFIDF"); //name of this triJob5.
-//        FileInputFormat.addInputPath(triJob5, new Path("/books/temp/tf/")); //input path
-//        String output = args[1] + "/tri";
-//        FileOutputFormat.setOutputPath(triJob5, new Path(output)); //output path
-//        triJob5.setMapperClass(TFIDFTriMapper.class); //test.mapper class
-//        triJob5.setReducerClass(TFIDFTriReducer.class); //reducer class
-//        triJob5.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
-//        triJob5.setOutputValueClass(DoubleWritable.class); // the value
-//        boolean success = triJob5.waitForCompletion(true);
+        Job triJob = Job.getInstance(new Configuration());
+        triJob.setJarByClass(TermFrequency.class); //this class's name
+        triJob.setJobName("N-Gram Calculation"); //name of this triJob.
+        FileInputFormat.addInputPath(triJob, new Path(args[0])); //input path
+        FileOutputFormat.setOutputPath(triJob, new Path("/books/temp/ng")); //output path
+        triJob.setMapperClass(TrigramCalculationMapper.class); //test.mapper class
+        triJob.setCombinerClass(NGramCalculationReducer.class); //optional
+        triJob.setReducerClass(NGramCalculationReducer.class); //reducer class
+        triJob.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
+        triJob.setOutputValueClass(IntWritable.class); // the value
+        triJob.waitForCompletion(true);
 
-//        FileSystem fs3 = FileSystem.get(new Configuration());
-//        fs3.delete(new Path("/books/temp/"), true);
+        //max term triJob
+        Job triJob2 = Job.getInstance(new Configuration());
+        triJob2.setJarByClass(TermFrequency.class); //this class's name
+        triJob2.setJobName("Max Term"); //name of this triJob2.
+        FileInputFormat.addInputPath(triJob2, new Path("/books/temp/ng/")); //input path
+        FileOutputFormat.setOutputPath(triJob2, new Path("/books/temp/max/")); //output path
+        triJob2.setMapperClass(MaxTermTriMapper.class); //test.mapper class
+        triJob2.setCombinerClass(MaxTermReducer.class); //optional
+        triJob2.setReducerClass(MaxTermReducer.class); //reducer class
+        triJob2.setOutputKeyClass(Text.class); // the key your reducer outputs
+        triJob2.setOutputValueClass(IntWritable.class); // the value
+        triJob2.waitForCompletion(true);
+
+        //TF triJob
+        Job triJob3 = Job.getInstance(new Configuration());
+        triJob3.setJarByClass(TermFrequency.class); //this class's name
+        triJob3.setJobName("TF"); //name of this triJob3.
+        FileInputFormat.addInputPath(triJob3, new Path("/books/temp/ng/")); //input path
+        FileOutputFormat.setOutputPath(triJob3, new Path("/books/temp/tf")); //output path
+        triJob3.setMapperClass(TFTriMapper.class); //test.mapper class
+        triJob3.setReducerClass(TFReducer.class); //reducer class
+        triJob3.setMapOutputValueClass(IntWritable.class);
+        triJob3.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
+        triJob3.setOutputValueClass(DoubleWritable.class); // the value
+        triJob3.waitForCompletion(true);
+
+        //IDF triJob
+        Configuration configuration3 = new Configuration();
+        FileSystem fileSystem3 = FileSystem.get(configuration3);
+        Path path3 = new Path(args[0]);
+        configuration3.setLong("fileCount", fileSystem3.listStatus(path3).length);
+        Job triJob4 = Job.getInstance(configuration3);
+        triJob4.setJarByClass(TermFrequency.class); //this class's name
+        triJob4.setJobName("IDF"); //name of this triJob4.
+        FileInputFormat.addInputPath(triJob4, new Path("/books/temp/ng/")); //input path
+        FileOutputFormat.setOutputPath(triJob4, new Path("/books/temp/idf")); //output path
+        triJob4.setMapperClass(IDFTriMapper.class); //test.mapper class
+        triJob4.setReducerClass(IDFReducer.class); //reducer class
+        triJob4.setMapOutputValueClass(IntWritable.class);
+        triJob4.setOutputKeyClass(Text.class); // the key your reducer outputs
+        triJob4.setOutputValueClass(DoubleWritable.class); // the value
+        triJob4.waitForCompletion(true);
+
+        //TFIDF triJob
+        Job triJob5 = Job.getInstance(new Configuration());
+        triJob5.setJarByClass(TermFrequency.class); //this class's name
+        triJob5.setJobName("TFIDF"); //name of this triJob5.
+        FileInputFormat.addInputPath(triJob5, new Path("/books/temp/tf/")); //input path
+        output = args[1] + "/tri";
+        FileOutputFormat.setOutputPath(triJob5, new Path(output)); //output path
+        triJob5.setMapperClass(TFIDFTriMapper.class); //test.mapper class
+        triJob5.setReducerClass(TFIDFTriReducer.class); //reducer class
+        triJob5.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
+        triJob5.setOutputValueClass(DoubleWritable.class); // the value
+        triJob5.waitForCompletion(true);
+
+        FileSystem fs3 = FileSystem.get(new Configuration());
+        fs3.delete(new Path("/books/temp/"), true);
 
 //        System.exit(success ? 0 : 1);
 
@@ -337,7 +337,7 @@ public class TermFrequency
         fourJob5.setJarByClass(TermFrequency.class); //this class's name
         fourJob5.setJobName("TFIDF"); //name of this fourJob5.
         FileInputFormat.addInputPath(fourJob5, new Path("/books/temp/tf/")); //input path
-        String output = args[1] + "/four";
+        output = args[1] + "/four";
         FileOutputFormat.setOutputPath(fourJob5, new Path(output)); //output path
         fourJob5.setMapperClass(TFIDFFourMapper.class); //test.mapper class
         fourJob5.setReducerClass(TFIDFFourReducer.class); //reducer class
@@ -345,8 +345,8 @@ public class TermFrequency
         fourJob5.setOutputValueClass(DoubleWritable.class); // the value
         boolean success = fourJob5.waitForCompletion(true);
 
-//        FileSystem fs3 = FileSystem.get(new Configuration());
-//        fs3.delete(new Path("/books/temp/"), true);
+        FileSystem fs4 = FileSystem.get(new Configuration());
+        fs4.delete(new Path("/books/temp/"), true);
 
         System.exit(success ? 0 : 1);
     }

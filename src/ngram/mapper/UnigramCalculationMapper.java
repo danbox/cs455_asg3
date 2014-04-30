@@ -27,15 +27,10 @@ public class UnigramCalculationMapper extends Mapper<LongWritable, Text, NGramWr
         FileSplit fileSplit = (FileSplit)context.getInputSplit();
         String filename = fileSplit.getPath().getName();
 
-        String line = value.toString();
+        String line = value.toString().replaceAll("(?!-)\\p{Punct}", "");
         StringTokenizer tok = new StringTokenizer(line);
         while(tok.hasMoreTokens())
         {
-//            String unigram = tok.nextToken().replaceAll("(?!-)\\p{Punct}", "");
-//            if(unigram.length() != 0)
-//            {
-//                context.write(new NGramWritableComparable(filename, unigram), new IntWritable(1));
-//            }
             context.write(new NGramWritableComparable(filename, tok.nextToken()), new IntWritable(1));
         }
     }

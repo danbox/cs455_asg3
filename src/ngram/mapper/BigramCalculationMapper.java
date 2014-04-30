@@ -24,25 +24,15 @@ public class BigramCalculationMapper extends Mapper<LongWritable, Text, NGramWri
         FileSplit fileSplit = (FileSplit)context.getInputSplit();
         String filename = fileSplit.getPath().getName();
 
-        String line = value.toString();
+        String line = value.toString().replaceAll("(?!-)\\p{Punct}", "");
         StringTokenizer tok = new StringTokenizer(line);
         String first = null;
         if(tok.hasMoreTokens())
         {
-//            first = tok.nextToken().replaceAll("(?!-)\\p{Punct}", "");
-//            while(first.length() == 0 && tok.hasMoreTokens())
-//            {
-//                first = tok.nextToken().replaceFirst("(?!-)\\p{Punct}", "");
-//            }
             first = tok.nextToken();
         }
         while(tok.hasMoreTokens())
         {
-//            String second = tok.nextToken().replaceAll("(?!-)\\p{Punct}", "");
-//            while(second.length() == 0 && tok.hasMoreTokens())
-//            {
-//                second = tok.nextToken().replaceAll("(?!-)\\p{Punct}", "");
-//            }
             String second = tok.nextToken();
             context.write(new NGramWritableComparable(filename, first + " " +  second), new IntWritable(1));
             first = second;

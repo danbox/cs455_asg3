@@ -24,7 +24,7 @@ public class TrigramCalculationMapper extends Mapper<LongWritable, Text, NGramWr
         FileSplit fileSplit = (FileSplit)context.getInputSplit();
         String filename = fileSplit.getPath().getName();
 
-        String line = value.toString();
+        String line = value.toString().replaceAll("(?!-)\\p{Punct}", "");
         StringTokenizer tok = new StringTokenizer(line);
 
         String first, second, third;
