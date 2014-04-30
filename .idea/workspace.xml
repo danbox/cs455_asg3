@@ -6,23 +6,12 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ea20e7-03ed-45a9-a24c-457f380a78ba" name="Default" comment="Almost done.  Needs testing">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/average_grade_level.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/average_reading_ease.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flesch_kincaid_grade_level.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/flesch_reading_ease.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grade_level.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grade_level_average.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reading_ease.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/reading_ease_average.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/unique.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java" afterPath="$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java" afterPath="$PROJECT_DIR$/src/ngram/mapper/FourGramCalculationMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/unique/runner/TFIDFVector.java" afterPath="$PROJECT_DIR$/src/unique/runner/TFIDFVector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java" afterPath="$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java" afterPath="$PROJECT_DIR$/src/ngram/mapper/TrigramCalculationMapper.java" />
+    <list default="true" id="10ea20e7-03ed-45a9-a24c-457f380a78ba" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java" afterPath="$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/unique/runner/Unique.java" afterPath="$PROJECT_DIR$/src/unique/runner/Unique.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grade_level.txt" afterPath="$PROJECT_DIR$/grade_level.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grade_level_average.txt" afterPath="$PROJECT_DIR$/grade_level_average.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/reading_ease.txt" afterPath="$PROJECT_DIR$/reading_ease.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cs455_asg3.iws" />
@@ -87,17 +76,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TermFrequency.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/tfidf/runner/TermFrequency.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="345" column="26" selection-start="19418" selection-end="19418" vertical-scroll-proportion="-7.9" vertical-offset="5736" max-vertical-offset="9540">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TFIDFVectorReducer.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/unique/reducer/TFIDFVectorReducer.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -170,13 +148,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UnigramCalculationMapper.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="107" column="43" selection-start="4025" selection-end="4025" vertical-scroll-proportion="2.19863" vertical-offset="0" max-vertical-offset="2052">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnigramCalculationMapper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="9" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.65753424" vertical-offset="0" max-vertical-offset="876">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="7" column="55" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -194,7 +179,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/readability/mapper/FleschReadingEaseAverageMapper.java" />
         <option value="$PROJECT_DIR$/src/readability/mapper/FleschAverageMapper.java" />
         <option value="$PROJECT_DIR$/src/readability/reducer/FleschKincaidReadingLevelAverageReducer.java" />
         <option value="$PROJECT_DIR$/src/readability/reducer/FleschAverageReducer.java" />
@@ -245,6 +229,7 @@
         <option value="$PROJECT_DIR$/src/unique/runner/TFIDFVector.java" />
         <option value="$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java" />
         <option value="$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java" />
+        <option value="$PROJECT_DIR$/README" />
       </list>
     </option>
   </component>
@@ -400,6 +385,10 @@
               <option name="myItemId" value="tfidf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -712,6 +701,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="reducer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mapper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -730,6 +741,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="readability" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="readability" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runner" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -792,6 +829,54 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ngram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs455_asg3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ngram" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="reducer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -852,6 +937,7 @@
       <recent name="$PROJECT_DIR$/src/tfidf/mapper/tri" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/test" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -1102,7 +1188,11 @@
       <created>1398845688603</created>
       <updated>1398845688603</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Almost done.  Added output files for tar">
+      <created>1398867613428</created>
+      <updated>1398867613428</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1157,7 +1247,8 @@
     <MESSAGE value="Histograms are working as well as plotting averages for Flesch in each decade" />
     <MESSAGE value="Got unique n-grams working and maybe TFIDF vector" />
     <MESSAGE value="Almost done.  Needs testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost done.  Needs testing" />
+    <MESSAGE value="Almost done.  Added output files for tar" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost done.  Added output files for tar" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1167,13 +1258,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/readability/mapper/FleschAverageMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="1" selection-start="373" selection-end="959" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/reducer/FleschKincaidGradeLevelHistogramReducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="8" selection-start="1020" selection-end="1551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
@@ -1183,7 +1267,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/util/FleschWritable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="0" selection-start="261" selection-end="1975" vertical-scroll-proportion="0.0" vertical-offset="1278" max-vertical-offset="1386" />
+        <state line="85" column="0" selection-start="261" selection-end="1975" vertical-scroll-proportion="0.0" vertical-offset="1278" max-vertical-offset="1386">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/unique/util/DecadeValueWritable.java">
@@ -1219,12 +1305,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/util/DocumentComparator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="0" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1584" />
+        <state line="38" column="0" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0" vertical-offset="126" max-vertical-offset="1584">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschKincaidGradeLevelHistogram.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="5" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="738" />
+        <state line="47" column="5" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="738">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/readability/runner/FleschKincaidGradeLevelAverage.java">
@@ -1513,6 +1607,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="55" selection-start="281" selection-end="281" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ngram/mapper/BigramCalculationMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="9" selection-start="1071" selection-end="1071" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
@@ -1520,12 +1621,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ngram/mapper/UnigramCalculationMapper.java">
+    <entry file="file://$PROJECT_DIR$/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="9" selection-start="1036" selection-end="1036" vertical-scroll-proportion="0.65753424" vertical-offset="0" max-vertical-offset="876">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="107" column="43" selection-start="4025" selection-end="4025" vertical-scroll-proportion="2.19863" vertical-offset="0" max-vertical-offset="2052">
+          <folding />
         </state>
       </provider>
     </entry>

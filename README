@@ -1,0 +1,108 @@
+Dan Boxler
+CS455 ASG3
+
+Corpus Analysis Using MapReduce: Zeitgeist and Language Evolution
+
+Project Structure:
+├── ngram
+│   ├── mapper - used to calculate various n-grams
+│   │   ├── BigramCalculationMapper.java
+│   │   ├── FourGramCalculationMapper.java
+│   │   ├── TrigramCalculationMapper.java
+│   │   └── UnigramCalculationMapper.java
+│   ├── reducer - calculates occurrence of various n-grams
+│   │   └── NGramCalculationReducer.java
+│   ├── runner
+│   │   └── NGramCalculation.java - driver for n-gram calculation
+│   └── util
+│       └── NGramWritableComparable.java - implements WritableComparable for n-grams
+├── readability
+│   ├── mapper - mappers to calculate flesch values
+│   │   ├── FleschAverageMapper.java - mapper for average flesch values
+│   │   └── FleschMapper.java - mapper for flesch values
+│   ├── reducer - reducers for calculating flesch values and creating of data for histograms
+│   │   ├── FleschAverageReducer.java
+│   │   ├── FleschKincaidGradeLevelHistogramReducer.java
+│   │   ├── FleschKincaidGradeLevelReducer.java
+│   │   ├── FleschReadingEaseHistogramReducer.java
+│   │   └── FleschReadingEaseReducer.java
+│   ├── runner - drivers for flesch values
+│   │   ├── FleschKincaidGradeLevelAverage.java
+│   │   ├── FleschKincaidGradeLevelHistogram.java
+│   │   ├── FleschKincaidGradeLevel.java
+│   │   ├── FleschReadingEaseAverage.java
+│   │   ├── FleschReadingEaseHistogram.java
+│   │   └── FleschReadingEase.java
+│   └── util
+│       ├── DocumentComparator.java - allows sorting based on document year
+│       └── FleschWritable.java - implements Writable allowing for flesch value
+├── test - test package
+│   ├── FleschReadingEaseTest.java
+│   ├── mapper
+│   │   └── YarnWordCountMapper.java
+│   ├── reducer
+│   │   └── YarnWordCountReducer.java
+│   ├── runner
+│   │   └── WordCountRunner.java
+│   ├── temp.txt
+│   ├── Tester.java
+│   └── test.txt
+├── tfidf
+│   ├── mapper - mappers for Term Frequency, InverseDocumentFrequency, and TFIDF
+│   │   ├── bi
+│   │   │   ├── IDFBiMapper.java
+│   │   │   ├── MaxTermBiMapper.java
+│   │   │   ├── TFBiMapper.java
+│   │   │   └── TFIDFBiMapper.java
+│   │   ├── four
+│   │   │   ├── IDFFourMapper.java
+│   │   │   ├── MaxTermFourMapper.java
+│   │   │   ├── TFFourMapper.java
+│   │   │   └── TFIDFFourMapper.java
+│   │   ├── tri
+│   │   │   ├── IDFTriMapper.java
+│   │   │   ├── MaxTermTriMapper.java
+│   │   │   ├── TFIDFTriMapper.java
+│   │   │   └── TFTriMapper.java
+│   │   └── uni
+│   │       ├── IDFUniMapper.java
+│   │       ├── MaxTermUniMapper.java
+│   │       ├── TFIDFUniMapper.java
+│   │       └── TFUniMapper.java
+│   ├── reducer - reducers for Term Frequency, InverseDocumentFrequency, and TFIDF
+│   │   ├── bi
+│   │   │   └── TFIDFBiReducer.java
+│   │   ├── four
+│   │   │   └── TFIDFFourReducer.java
+│   │   ├── IDFReducer.java
+│   │   ├── MaxTermReducer.java
+│   │   ├── TFReducer.java
+│   │   ├── tri
+│   │   │   └── TFIDFTriReducer.java
+│   │   └── uni
+│   │       └── TFIDFUniReducer.java
+│   ├── runner - driver to derive TFIDF
+│   │   └── TermFrequency.java
+│   └── util
+│       ├── DocumentTermFrequencyKey.java - not used
+│       ├── FileCounter.java - not used
+│       ├── TermFrequencyWritable.java - Ccustom Writable
+│       └── TermPartitioner.java - Custom partitioner
+└── unique
+    ├── mapper - mappers for unique terms and TFIDF vector per decade
+    │   ├── TFIDFVectorMapper.java
+    │   ├── UniqueDecadeMapper.java
+    │   └── UniqueMapper.java
+    ├── reducer - reducers for unique terms and TFIDF vector per decade
+    │   ├── TFIDFVectorReducer.java
+    │   ├── UniqueDecadeReducer.java
+    │   └── UniqueReducer.java
+    ├── runner - drivers for unique terms and TFIDF vector per decade
+    │   ├── TFIDFVector.java
+    │   └── Unique.java
+    └── util
+        ├── DecadeValueWritable.java - custom Writable
+        └── TermValueWritable.java - custom Writable
+
+Usage: $HADOOP_HOME/bin/hadoop jar corpus_analysis.jar <driver> <source directory> <destination directory>
+    Drivers can be found in runner packages
