@@ -12,19 +12,17 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-import tfidf.mapper.IDFMapper;
-import tfidf.mapper.MaxTermMapper;
-import tfidf.mapper.TFIDFMapper;
-import tfidf.mapper.TFMapper;
+import tfidf.mapper.uni.IDFUniMapper;
+import tfidf.mapper.uni.MaxTermUniMapper;
+import tfidf.mapper.uni.TFIDFUniMapper;
+import tfidf.mapper.uni.TFUniMapper;
 import tfidf.reducer.IDFReducer;
 import tfidf.reducer.MaxTermReducer;
-import tfidf.reducer.TFIDFReducer;
 import tfidf.reducer.TFReducer;
+import tfidf.reducer.uni.TFIDFUniReducer;
 import unique.mapper.TFIDFVectorMapper;
-import unique.mapper.UniqueDecadeMapper;
 import unique.mapper.UniqueMapper;
 import unique.reducer.TFIDFVectorReducer;
-import unique.reducer.UniqueDecadeReducer;
 import unique.reducer.UniqueReducer;
 import unique.util.DecadeValueWritable;
 import unique.util.TermValueWritable;
@@ -63,7 +61,7 @@ public class TFIDFVector
         job2.setJobName("Max Term"); //name of this job2.
         FileInputFormat.addInputPath(job2, new Path("/books/temp/ng/")); //input path
         FileOutputFormat.setOutputPath(job2, new Path("/books/temp/max/")); //output path
-        job2.setMapperClass(MaxTermMapper.class); //test.mapper class
+        job2.setMapperClass(MaxTermUniMapper.class); //test.mapper class
         job2.setCombinerClass(MaxTermReducer.class); //optional
         job2.setReducerClass(MaxTermReducer.class); //reducer class
         job2.setOutputKeyClass(Text.class); // the key your reducer outputs
@@ -79,7 +77,7 @@ public class TFIDFVector
         job3.setJobName("TF"); //name of this job3.
         FileInputFormat.addInputPath(job3, new Path("/books/temp/ng/")); //input path
         FileOutputFormat.setOutputPath(job3, new Path("/books/temp/tf")); //output path
-        job3.setMapperClass(TFMapper.class); //test.mapper class
+        job3.setMapperClass(TFUniMapper.class); //test.mapper class
 //        job3.setCombinerClass(TFReducer.class); //optional
         job3.setReducerClass(TFReducer.class); //reducer class
         job3.setMapOutputValueClass(IntWritable.class);
@@ -102,7 +100,7 @@ public class TFIDFVector
         job4.setJobName("IDF"); //name of this job4.
         FileInputFormat.addInputPath(job4, new Path("/books/temp/ng/")); //input path
         FileOutputFormat.setOutputPath(job4, new Path("/books/temp/idf")); //output path
-        job4.setMapperClass(IDFMapper.class); //test.mapper class
+        job4.setMapperClass(IDFUniMapper.class); //test.mapper class
 //        job4.setCombinerClass(IDFReducer.class); //optional
         job4.setReducerClass(IDFReducer.class); //reducer class
         job4.setMapOutputValueClass(IntWritable.class);
@@ -120,9 +118,9 @@ public class TFIDFVector
         job5.setJobName("TFIDF"); //name of this job5.
         FileInputFormat.addInputPath(job5, new Path("/books/temp/tf/")); //input path
         FileOutputFormat.setOutputPath(job5, new Path("/books/temp/tfidf")); //output path
-        job5.setMapperClass(TFIDFMapper.class); //test.mapper class
+        job5.setMapperClass(TFIDFUniMapper.class); //test.mapper class
 //        job5.setCombinerClass(TFReducer.class); //optional
-        job5.setReducerClass(TFIDFReducer.class); //reducer class
+        job5.setReducerClass(TFIDFUniReducer.class); //reducer class
 //        job5.setMapOutputValueClass(IntWritable.class);
         job5.setOutputKeyClass(NGramWritableComparable.class); // the key your reducer outputs
         job5.setOutputValueClass(DoubleWritable.class); // the value

@@ -1,7 +1,5 @@
-package tfidf.mapper;
+package tfidf.mapper.tri;
 
-import ngram.util.NGramWritableComparable;
-import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
@@ -12,9 +10,9 @@ import java.util.StringTokenizer;
 
 /**
  * @author danbox
- * @date 4/24/14.
+ * @date 4/29/14.
  */
-public class TFIDFMapper extends Mapper<LongWritable, Text, NGramWritableComparable, DoubleWritable>
+public class MaxTermTriMapper extends Mapper<LongWritable, Text, Text, IntWritable>
 {
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException
@@ -25,7 +23,13 @@ public class TFIDFMapper extends Mapper<LongWritable, Text, NGramWritableCompara
         StringTokenizer tok = new StringTokenizer(line);
         while(tok.hasMoreTokens())
         {
-            context.write(new NGramWritableComparable(tok.nextToken(), tok.nextToken()), new DoubleWritable(Double.parseDouble(tok.nextToken())));
+            String doc = tok.nextToken();
+            tok.nextToken();
+            tok.nextToken();
+            tok.nextToken();
+
+            context.write(new Text(doc), new IntWritable(Integer.parseInt(tok.nextToken())));
         }
     }
 }
+

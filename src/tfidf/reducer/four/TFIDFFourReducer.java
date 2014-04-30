@@ -1,12 +1,10 @@
-package tfidf.reducer;
+package tfidf.reducer.four;
 
 import ngram.util.NGramWritableComparable;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.DoubleWritable;
-import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
 import java.io.BufferedReader;
@@ -17,9 +15,9 @@ import java.util.Map;
 
 /**
  * @author danbox
- * @date 4/24/14.
+ * @date 4/29/14.
  */
-public class TFIDFReducer extends Reducer<NGramWritableComparable, DoubleWritable, NGramWritableComparable, DoubleWritable>
+public class TFIDFFourReducer extends Reducer<NGramWritableComparable, DoubleWritable, NGramWritableComparable, DoubleWritable>
 {
     private Map<String, String> TFResults = new HashMap<String, String>();
 
@@ -50,7 +48,10 @@ public class TFIDFReducer extends Reducer<NGramWritableComparable, DoubleWritabl
         while(line != null)
         {
             String[] split = line.split("\\s+");
-            TFResults.put(split[0], split[1]);
+            if(split.length == 5)
+            {
+                TFResults.put(split[0] + " " + split[1] + " " + split[2] + " " + split[3], split[4]);
+            }
             line = bufferedReader.readLine();
         }
     }

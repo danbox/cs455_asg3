@@ -14,10 +14,10 @@ import java.util.StringTokenizer;
  * @author danbox
  * @date 4/16/14.
  */
-public class FourGramCalculationMapper extends Mapper<NGramWritableComparable, IntWritable, NGramWritableComparable, IntWritable>
+public class FourGramCalculationMapper extends Mapper<LongWritable, Text, NGramWritableComparable, IntWritable>
 {
     @Override
-    public void map(NGramWritableComparable key, IntWritable value, Context context) throws IOException, InterruptedException
+    public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException
     {
         //get filename
         FileSplit fileSplit = (FileSplit)context.getInputSplit();

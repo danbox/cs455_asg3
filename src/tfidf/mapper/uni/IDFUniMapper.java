@@ -1,4 +1,4 @@
-package tfidf.mapper;
+package tfidf.mapper.uni;
 
 import ngram.util.NGramWritableComparable;
 import org.apache.hadoop.io.BooleanWritable;
@@ -18,10 +18,8 @@ import java.util.StringTokenizer;
  * @author danbox
  * @date 4/22/14.
  */
-public class IDFMapper extends Mapper<LongWritable, Text, Text, IntWritable>
+public class IDFUniMapper extends Mapper<LongWritable, Text, Text, IntWritable>
 {
-    List<String> documents = new ArrayList<String>();
-
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException
     {

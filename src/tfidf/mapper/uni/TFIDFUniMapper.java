@@ -1,21 +1,20 @@
-package tfidf.mapper;
+package tfidf.mapper.uni;
 
 import ngram.util.NGramWritableComparable;
+import org.apache.hadoop.io.DoubleWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
-import org.apache.hadoop.mapreduce.lib.input.FileSplit;
-import tfidf.util.TermFrequencyWritable;
 
 import java.io.IOException;
 import java.util.StringTokenizer;
 
 /**
  * @author danbox
- * @date 4/16/14.
+ * @date 4/24/14.
  */
-public class MaxTermMapper extends Mapper<LongWritable, Text, Text, IntWritable>
+public class TFIDFUniMapper extends Mapper<LongWritable, Text, NGramWritableComparable, DoubleWritable>
 {
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException
@@ -26,10 +25,7 @@ public class MaxTermMapper extends Mapper<LongWritable, Text, Text, IntWritable>
         StringTokenizer tok = new StringTokenizer(line);
         while(tok.hasMoreTokens())
         {
-            String doc = tok.nextToken();
-            tok.nextToken();
-
-            context.write(new Text(doc), new IntWritable(Integer.parseInt(tok.nextToken())));
+            context.write(new NGramWritableComparable(tok.nextToken(), tok.nextToken()), new DoubleWritable(Double.parseDouble(tok.nextToken())));
         }
     }
 }

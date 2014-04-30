@@ -1,4 +1,4 @@
-package tfidf.mapper;
+package tfidf.mapper.uni;
 
 import ngram.util.NGramWritableComparable;
 import org.apache.hadoop.io.DoubleWritable;
@@ -14,7 +14,7 @@ import java.util.StringTokenizer;
  * @author danbox
  * @date 4/23/14.
  */
-public class TFMapper extends Mapper<LongWritable, Text, NGramWritableComparable, IntWritable>
+public class TFUniMapper extends Mapper<LongWritable, Text, NGramWritableComparable, IntWritable>
 {
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException

@@ -28,20 +28,26 @@ public class FleschReadingEaseTest
             split.addAll(Arrays.asList(line.split("\\s+")));
             for(String curr : split)
             {
-                wordCount += 1;
-                syllableCount += countSyllables(curr);
-
-                char lastChar = curr.charAt(curr.length() - 1);
-
-                if(lastChar == '.' || lastChar == '!' || lastChar == '?')
+                if(curr.length() != 0)
                 {
-                    sentenceCount += 1;
+                    wordCount += 1;
+                    syllableCount += countSyllables(curr);
+
+                    char lastChar = curr.charAt(curr.length() - 1);
+
+                    if(lastChar == '.' || lastChar == '!' || lastChar == '?')
+                    {
+                        sentenceCount += 1;
+                    }
                 }
             }
+            line = br.readLine();
 //            System.out.print(".");
         }
-        double output = 206.835 - 1.015 * (wordCount / sentenceCount) - 84.6 * (syllableCount / wordCount);
-        System.out.println(output);
+        double readingEase = 206.835 - 1.015 * (wordCount / sentenceCount) - 84.6 * (syllableCount / wordCount);
+        System.out.println(readingEase);
+        double gradeLevel = .39 * (wordCount / sentenceCount) + 11.8 * (syllableCount / wordCount) - 15.59;
+        System.out.println(gradeLevel);
     }
 
     private static int countSyllables(String word)
